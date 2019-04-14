@@ -1,0 +1,112 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+  [[setupQuad]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 65:24
+      size = 1855, 1056
+      title = angad@angad: ~
+      type = Window
+    [[[child1]]]
+      active_page = 0
+      labels = None, None
+      last_active_term = 27eee6ef-1aaa-4a7c-9bd3-db85ee05a8cc, 43ad96e4-7a10-42aa-805e-37b4776b7ad5
+      order = 0
+      parent = child0
+      type = Notebook
+    [[[child11]]]
+      order = 1
+      parent = child7
+      position = 925
+      ratio = 0.5
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 929
+      ratio = 0.906128404669
+      type = VPaned
+    [[[child3]]]
+      order = 0
+      parent = child2
+      position = 264
+      ratio = 0.143665768194
+      type = HPaned
+    [[[child7]]]
+      order = 1
+      parent = child1
+      position = 511
+      ratio = 0.499513618677
+      type = VPaned
+    [[[child8]]]
+      order = 0
+      parent = child7
+      position = 925
+      ratio = 0.5
+      type = HPaned
+    [[[terminal10]]]
+      order = 1
+      parent = child8
+      profile = default
+      type = Terminal
+      uuid = 43ad96e4-7a10-42aa-805e-37b4776b7ad5
+    [[[terminal12]]]
+      order = 0
+      parent = child11
+      profile = default
+      type = Terminal
+      uuid = 607ce7a1-a002-448c-81f3-fbf626522074
+    [[[terminal13]]]
+      order = 1
+      parent = child11
+      profile = default
+      type = Terminal
+      uuid = c8f56ae6-9b33-40f9-b555-eb558faf4a5c
+    [[[terminal4]]]
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="ranger $GOPATH/src/github.com; unset PROMPT_COMMAND"') -i'''
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 5477787d-c22d-4a3e-9f9e-b8ab6b5de14b
+    [[[terminal5]]]
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="vim; unset PROMPT_COMMAND"') -i'''
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 27eee6ef-1aaa-4a7c-9bd3-db85ee05a8cc
+    [[[terminal6]]]
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="cd $GOPATH/src/github.com/; unset PROMPT_COMMAND"') -i'''
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = e797aa81-f836-4448-b2f0-058cb94914d7
+    [[[terminal9]]]
+      order = 0
+      parent = child8
+      profile = default
+      type = Terminal
+      uuid = 94c46c05-ae18-469f-9119-7bc1607899e0
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.51
+    background_image = None
+    font = Monospace 14
+    foreground_color = "#00ff00"
+    use_system_font = False
