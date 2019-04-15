@@ -47,6 +47,7 @@
       parent = child2
       profile = default
       type = Terminal
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="ranger $GOPATH/src/github.com/angadsharma1016; unset PROMPT_COMMAND"') -i'''
       uuid = 27eee6ef-1aaa-4a7c-9bd3-db85ee05a8cc
     [[[terminal5]]]
       order = 1
