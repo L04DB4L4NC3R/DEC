@@ -18,7 +18,7 @@ set mouse=a
 set tabstop=2
 
 " Mapping for fast quit without save
-nnoremap <Backspace> :q<cr>
+noremap <Backspace> :q<cr>
 
 " Display line numbers
 set nu
@@ -33,3 +33,13 @@ set noswapfile
 set t_Co=256
 set t_ut=
 colorscheme codedark
+
+" Open GoDef in different pane
+cnoreabbrev gd GoDef
+
+function SplitAndDef()
+				split | :GoDef
+				return 0
+endfunction 
+
+noremap <NUL> :call SplitAndDef()
