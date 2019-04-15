@@ -48,7 +48,6 @@
       profile = default
       type = Terminal
       uuid = 27eee6ef-1aaa-4a7c-9bd3-db85ee05a8cc
-			command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="vim; unset PROMPT_COMMAND"') -i'''
     [[[terminal5]]]
       order = 1
       parent = child1
