@@ -18,3 +18,8 @@ set tabstop=2
 " Mapping for fast quit without save
 nnoremap <Backspace> :q<cr>
 
+" Display line numbers
+set nu
+
+" Display colour
+colo simo-zz-2
