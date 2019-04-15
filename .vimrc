@@ -23,3 +23,7 @@ set nu
 
 " Display colour
 colo simo-zz-2
+
+" Disable swap file creation
+set noswapfile
+

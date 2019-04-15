@@ -54,8 +54,8 @@
       parent = child1
       profile = default
       type = Terminal
-			command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="htop; unset PROMPT_COMMAND"') -i'''
       uuid = e797aa81-f836-4448-b2f0-058cb94914d7
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="cd $GOPATH/src/github.com/angadsharma1016; unset PROMPT_COMMAND"') -i'''
 [plugins]
 [profiles]
   [[default]]
