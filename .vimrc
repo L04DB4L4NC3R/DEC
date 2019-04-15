@@ -1,3 +1,8 @@
+" For vim-go plugin
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 " for ctrlp plugin
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
@@ -12,3 +17,4 @@ set tabstop=2
 
 " Mapping for fast quit without save
 nnoremap <Backspace> :q<cr>
+
