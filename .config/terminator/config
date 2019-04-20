@@ -1,8 +1,8 @@
 [global_config]
   suppress_multiple_term_dialog = True
 [keybindings]
-		switch_to_tab_1 = <Alt>1
-		switch_to_tab_2 = <Alt>2
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = <Alt>2
 [layouts]
   [[default]]
     [[[child1]]]
@@ -11,6 +11,38 @@
     [[[window0]]]
       parent = ""
       type = Window
+  [[ntree]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 8220bafe-9ced-46e5-b12e-37f4584efe78
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 65:24
+      size = 1855, 1056
+      title = angad@angad: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 953
+      ratio = 0.904829545455
+      type = VPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="cd $GOPATH/src/github.com; unset PROMPT_COMMAND"') -i'''
+      uuid = 8220bafe-9ced-46e5-b12e-37f4584efe78
+    [[[terminal3]]]
+      order = 1
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="cd $GOPATH/src/github.com/; unset PROMPT_COMMAND"') -i'''
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = adfe763a-eaec-4b3a-9cda-ac83200f35be
   [[setup]]
     [[[child0]]]
       fullscreen = False
@@ -36,26 +68,26 @@
       ratio = 0.224528301887
       type = HPaned
     [[[terminal3]]]
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="ranger $GOPATH/src/github.com/angadsharma1016; unset PROMPT_COMMAND"') -i'''
       order = 0
       parent = child2
       profile = default
       type = Terminal
-      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="ranger $GOPATH/src/github.com/angadsharma1016; unset PROMPT_COMMAND"') -i'''
-   		uuid = 5477787d-c22d-4a3e-9f9e-b8ab6b5de14b
+      uuid = 5477787d-c22d-4a3e-9f9e-b8ab6b5de14b
     [[[terminal4]]]
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="ranger $GOPATH/src/github.com/angadsharma1016; unset PROMPT_COMMAND"') -i'''
       order = 1
       parent = child2
       profile = default
       type = Terminal
-      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="ranger $GOPATH/src/github.com/angadsharma1016; unset PROMPT_COMMAND"') -i'''
       uuid = 27eee6ef-1aaa-4a7c-9bd3-db85ee05a8cc
     [[[terminal5]]]
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="cd $GOPATH/src/github.com/angadsharma1016; unset PROMPT_COMMAND"') -i'''
       order = 1
       parent = child1
       profile = default
       type = Terminal
       uuid = e797aa81-f836-4448-b2f0-058cb94914d7
-      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="cd $GOPATH/src/github.com/angadsharma1016; unset PROMPT_COMMAND"') -i'''
 [plugins]
 [profiles]
   [[default]]

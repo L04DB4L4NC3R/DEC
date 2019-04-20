@@ -1,2 +1,2 @@
-alias terminator="terminator -l setup && exit"
+alias terminator="terminator -l ntree && exit"
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
