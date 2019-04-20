@@ -43,3 +43,16 @@ function SplitAndDef()
 endfunction 
 
 noremap <NUL> :call SplitAndDef()
+
+" For cplouring the terminal
+set laststatus=2
+
+" For multicursor select
+let g:multi_cursor_start_word_key = '<C-d>'
+let g:multi_cursor_start_key = 'g<C-d>'
+
+" Nerdtree file manager
+map <C-n> :NERDTreeToggle<CR>
+
+" To run GoImports on save
+let g:go_fmt_command = "goimports"
