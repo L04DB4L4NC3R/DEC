@@ -56,3 +56,19 @@ map <C-n> :NERDTreeToggle<CR>
 
 " To run GoImports on save
 let g:go_fmt_command = "goimports"
+
+"remap to move between splits
+nmap <C-h> <c-w>h<c-w>
+nmap <C-l> <c-w>l<c-w>
+nmap <C-j> <c-w>j<c-w>
+nmap <C-k> <c-w>k<c-w>
+"esc Aernative
+imap ;; <Esc>
+"window size
+map <s-j> <c-w>+
+map <s-k> <c-w>-
+map <s-h> <c-w><
+map <s-l> <c-w>>
+
+noremap <c-o> :split
+noremap <c-e> :vsplit
