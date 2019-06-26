@@ -52,8 +52,8 @@
 
 ### Zsh plugins included 
 
-* git
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+* git
 
 <br/>
 
@@ -83,10 +83,17 @@
 
 <br/>
 
+> Jazz up your debian or ubuntu system instantly. Go from having nothing on your system to a powerful and self-sufficient IDE in minutes. You will want for nothing after this!
+
+<br/>
+
 ### Getting started
 Follow the following steps for instantly getting started
 
 ```bash
+# Prerequisites:
+$ sudo apt install make # The only prerequisite!
+
 # Clone the repo in you $HOME
 $ git clone https://github.com/L04DB4L4NC3R/DEC.git
 
@@ -101,6 +108,17 @@ $ make setup
 # Make sure you have graphics drivers installed
 $ make tools
 ```
+
+<br/>
+
+### Guide
+Now that you have the system setup, lets see what all you have.
+
+* No need to open a new terminal session. After setting up your current terminal will change to a beautiful `bira` theme in zsh.
+* Notice that you will be running `terminator` instead of your boring old tiling manager. Type `ctrl`+`shift`+`e` to split vertically.
+* Run `vim` to see your new editor in all its glory. Refer the `~/.vimrc` and the plugin README's for shortcuts.
+* Run `ranger` to get a file system GUI right on your terminal.
+* **optional**: If you have your tools installed, run any of `gotop`, `htop`, or `nvtop` to monitor your system in real time.
 
 <br/>
 
