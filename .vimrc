@@ -76,3 +76,6 @@ noremap <c-e> :vsplit
 " Enable emmet vim for just html and css
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
+
+" For YouCompleteMe
+set encoding=utf-8
