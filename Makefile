@@ -9,7 +9,7 @@ bootstrap:
 
 	@echo "Making sure you have all of the dependancies..."
 	mkdir ./.vim/bundle
-	sudo apt install vim terminator zsh python-pip fonts-powerline
+	sudo apt install vim terminator zsh python-pip fonts-powerline mono-xbuild mono-complete
 	pip install ranger-fm
 
 	@echo "Cloning all plugins into .vim......"
