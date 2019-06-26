@@ -4,11 +4,10 @@ r=$$(cat vim-plugins)
 .PHONY: bootstrap
 bootstrap:
 	@echo "Making sure you have all of the dependancies..."
+	mkdir ./.vim/bundle
 	sudo apt install vim terminator zsh python-pip
 	pip install ranger-fm
 
-	@echo "Removing submodules"
-	rm -rf ./.vim/bundle/* || mkdir ./.vim/bundle
 	@echo "Cloning all plugins into .vim......"
 	for f in $r; do $$(cd ./.vim/bundle && git clone $$f); done
 	exit
@@ -42,13 +41,16 @@ tools:
 	/tmp/gotop/scripts/download.sh
 	sudo mv gotop /usr/local/bin
 
+	@echo "cleaning up htop and gotop"
+	rm -rf htop gotop 
+
 	@echo "Installing nvtop....."
 	sudo apt install cmake libncurses5-dev libncursesw5-dev git
 	git clone https://github.com/Syllo/nvtop.git
 	mkdir -p nvtop/build && cd nvtop/build && cmake .. -DNVML_RETRIEVE_HEADER_ONLINE=True && make && sudo make install
 
-	@echo "Cleaning up...."
-	rm -rf htop gotop nvtop
+	@echo "Cleaning up nvtop"
+	rm -rf nvtop
 
 	@echo "Opening...."
 	nohup terminator -x zsh -c 'echo "Hello world"; exec htop' &
