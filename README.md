@@ -3,6 +3,28 @@
 </p>
 <h1 align="center">Dev Environment Config</h1>
 
+>When somebody begins a sentence with “IT WOULD BE NICE IF..” the right thing to do is to wait politely for the speaker to finish. No project ever gets around to the it-would-be-nice features: or if they do, they regret it. Wait for sentences that begin “WE HAVE TO..” and pay close attention, and see if you agree. **- Tom Van Vleck**
+ 
+> Are you a programmer? Do you wanna spend more time thinking and solving problems rather than writing biolerplate code again and again? Are you sick of bad navigation? Well this is the solution for you!
+
+<br/>
+
+### Getting started
+Follow the following steps for instantly getting started
+
+```bash
+# Clone the repo in you $HOME
+$ git clone https://github.com/L04DB4L4NC3R/DEC.git
+
+# cd into the directory
+$ cd DEC
+
+# Run bootstrap, and you are good to go
+$ make 
+```
+
+<br/>
+
 
 ### Dev environment tools
 
@@ -57,3 +79,12 @@
 * [htop](https://github.com/hishamhm/htop.git)
 * [nvtop](https://github.com/Syllo/nvtop.git)
 
+<br/>
+
+### Contributing
+If you want to add a `vim` plugin, make sure it uses pathogen. Just append the link to its repo [here](./clone)
+Make sure you run `make` again for the changes to apply
+
+<br/>
+
+Made with :heart: by Angad Sharma
