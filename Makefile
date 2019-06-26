@@ -5,11 +5,14 @@ r=$$(cat vim-plugins)
 bootstrap:
 	@echo "Making sure you have all of the dependancies..."
 	mkdir ./.vim/bundle
-	sudo apt install vim terminator zsh python-pip
+	sudo apt install vim terminator zsh python-pip fonts-powerline
 	pip install ranger-fm
 
 	@echo "Cloning all plugins into .vim......"
 	for f in $r; do $$(cd ./.vim/bundle && git clone $$f); done
+
+	@echo "Installing zsh dependancies...."
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	exit
 
 .PHONY: setup
