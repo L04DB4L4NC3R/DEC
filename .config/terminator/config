@@ -21,7 +21,6 @@
       parent = ""
       position = 65:24
       size = 1855, 1056
-      title = angad@angad: ~
       type = Window
     [[[child1]]]
       order = 0
@@ -53,7 +52,6 @@
       parent = ""
       position = 65:24
       size = 1855, 1056
-      title = angad@angad: ~
       type = Window
     [[[child1]]]
       order = 0
@@ -68,21 +66,21 @@
       ratio = 0.224528301887
       type = HPaned
     [[[terminal3]]]
-      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="ranger $GOPATH/src/github.com/angadsharma1016; unset PROMPT_COMMAND"') -i'''
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="ranger .; unset PROMPT_COMMAND"') -i'''
       order = 0
       parent = child2
       profile = default
       type = Terminal
       uuid = 5477787d-c22d-4a3e-9f9e-b8ab6b5de14b
     [[[terminal4]]]
-      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="ranger $GOPATH/src/github.com/angadsharma1016; unset PROMPT_COMMAND"') -i'''
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="ranger .; unset PROMPT_COMMAND"') -i'''
       order = 1
       parent = child2
       profile = default
       type = Terminal
       uuid = 27eee6ef-1aaa-4a7c-9bd3-db85ee05a8cc
     [[[terminal5]]]
-      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="cd $GOPATH/src/github.com/angadsharma1016; unset PROMPT_COMMAND"') -i'''
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="vim; unset PROMPT_COMMAND"') -i'''
       order = 1
       parent = child1
       profile = default

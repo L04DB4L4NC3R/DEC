@@ -7,30 +7,16 @@
  
 > Are you a programmer? Do you wanna spend more time thinking and solving problems rather than writing biolerplate code again and again? Are you sick of bad navigation? Well this is the solution for you!
 
-<br/>
-
-### Getting started
-Follow the following steps for instantly getting started
-
-```bash
-# Clone the repo in you $HOME
-$ git clone https://github.com/L04DB4L4NC3R/DEC.git
-
-# cd into the directory
-$ cd DEC
-
-# Run bootstrap, and you are good to go
-$ make 
-```
 
 <br/>
 
 
 ### Dev environment tools
 
-- [X] `zsh` shell
+- [X] `zsh` shell + plugins
 - [X] `terminator` tiling manager
-- [X] `vim` editor
+- [X] `vim` editor + plugins
+- [X] `ranger` file manager
 
 <br/>
 
@@ -43,7 +29,12 @@ $ make
 
 <br/>
 
-### Vim plugins
+
+![image](https://user-images.githubusercontent.com/30529572/60173214-dd942500-982b-11e9-8741-e867f2bbce70.png)
+
+<br/>
+
+### Vim plugins included
 
 * [vim-go](https://github.com/fatih/vim-go.git)
 * [ctrlp.vim](https://github.com/kien/ctrlp.vim.git)
@@ -59,7 +50,7 @@ $ make
 
 <br/>
 
-### Keyboard shortcuts
+### Recommended keyboard shortcuts for terminator 
 
 * `Alt`+`h`: Move to the left tile
 * `Alt`+`j`: Move to the tile below
@@ -73,7 +64,7 @@ $ make
 
 <br/>
 
-### Monitoring tools
+### Optional monitoring tools
 
 * [gotop](https://github.com/cjbassi/gotop.git)
 * [htop](https://github.com/hishamhm/htop.git)
@@ -81,9 +72,35 @@ $ make
 
 <br/>
 
+![image](https://user-images.githubusercontent.com/30529572/60172993-71b1bc80-982b-11e9-8adb-367095bbd959.png)
+
+<br/>
+
+### Getting started
+Follow the following steps for instantly getting started
+
+```bash
+# Clone the repo in you $HOME
+$ git clone https://github.com/L04DB4L4NC3R/DEC.git
+
+# cd into the directory
+$ cd DEC
+
+# Run bootstrap and setup, and you are good to go
+$ make bootstrap
+$ make setup
+
+# To install tools (optional)
+# Make sure you have graphics drivers installed
+$ make tools
+```
+
+<br/>
+
 ### Contributing
-If you want to add a `vim` plugin, make sure it uses pathogen. Just append the link to its repo [here](./clone)
-Make sure you run `make` again for the changes to apply
+If you want to add a `vim` plugin, make sure it uses pathogen. Just append the link to its repo [here](https://github.com/L04DB4L4NC3R/DEC/blob/master/vim-plugins).
+
+Make sure you run `make bootstrap && make setup` for the changes to apply
 
 <br/>
 
