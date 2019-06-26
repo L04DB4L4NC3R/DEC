@@ -32,7 +32,7 @@ set noswapfile
 " VSCODE colorscheme
 set t_Co=256
 set t_ut=
-colorscheme codedark
+" colorscheme codedark
 
 " Open GoDef in different pane
 cnoreabbrev gd GoDef
@@ -72,3 +72,7 @@ map <s-l> <c-w>>
 
 noremap <c-o> :split
 noremap <c-e> :vsplit
+
+" Enable emmet vim for just html and css
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall

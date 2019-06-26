@@ -47,6 +47,7 @@
 * `Alt`+`2`: Shift to tab 2
 * `Ctrl`+`Shift`+`o`: Create new vertical tile
 * `Ctrl`+`Shift`+`e`: Create new horizontal tile
+* `Ctrl`+`Shift`+`d`: Open terminator in custom mode
 
 <br/>
 
