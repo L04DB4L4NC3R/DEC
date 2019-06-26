@@ -3,6 +3,10 @@ r=$$(cat vim-plugins)
 
 .PHONY: bootstrap
 bootstrap:
+
+	@echo "Bootstrapping system..."
+	sudo apt-get update && sudo apt-get upgrade -y
+
 	@echo "Making sure you have all of the dependancies..."
 	mkdir ./.vim/bundle
 	sudo apt install vim terminator zsh python-pip fonts-powerline
@@ -16,8 +20,10 @@ bootstrap:
 	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 	exit
 
+
 .PHONY: setup
 setup:
+
 	@echo "Copying new configuration...."
 	@echo -n "This will replace your current configuration. Are you sure? [y/N] " && read ans && [ $${ans:-N} = y ]
 	@echo "Proceeding....."
@@ -33,10 +39,12 @@ setup:
 	exec zsh
 	exit
 
+
 .PHONY: tools
 tools:
+
 	@echo "Collecting tools...."
-	apt get install autoconf libncursesw cmake libncurses5-dev libncursesw5-dev 
+	sudo apt install autoconf libncursesw. cmake libncurses5-dev libncursesw5-dev 
 
 	@echo "Installing htop....."
 	git clone https://github.com/hishamhm/htop.git 
@@ -57,8 +65,4 @@ tools:
 	@echo "Cleaning up nvtop"
 	rm -rf nvtop
 
-	@echo "Opening...."
-	nohup terminator -x zsh -c 'echo "Hello world"; exec htop' &
-	nohup terminator -x zsh -c 'echo "Hello world"; exec gotop' &
-	nohup terminator -x zsh -c 'echo "Hello world"; exec nvtop' &
 	exit
