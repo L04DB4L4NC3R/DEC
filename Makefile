@@ -9,7 +9,7 @@ bootstrap:
 
 	@echo "Making sure you have all of the dependancies..."
 	mkdir ./.vim/bundle
-	sudo apt install vim terminator zsh python-pip fonts-powerline mono-xbuild mono-complete
+	sudo apt install vim terminator zsh python-pip fonts-powerline # mono-xbuild mono-complete
 	pip install ranger-fm
 
 	@echo "Cloning all plugins into .vim......"
@@ -17,8 +17,8 @@ bootstrap:
 
 	@echo "Installing zsh dependancies...."
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-	cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive && ./install.py --all
+#	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+#	cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive && ./install.py --all
 	exit
 
 
