@@ -50,6 +50,13 @@
 
 <br/>
 
+### Zsh plugins included 
+
+* git
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+<br/>
+
 ### Recommended keyboard shortcuts for terminator 
 
 * `Alt`+`h`: Move to the left tile
