@@ -8,7 +8,7 @@ bootstrap:
 	pip install ranger-fm
 
 	@echo "Removing submodules"
-	rm -rf ./.vim/bundle/*
+	rm -rf ./.vim/bundle/* || mkdir ./.vim/bundle
 	@echo "Cloning all plugins into .vim......"
 	for f in $r; do $$(cd ./.vim/bundle && git clone $$f); done
 	exit
