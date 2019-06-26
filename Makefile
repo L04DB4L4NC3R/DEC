@@ -18,7 +18,7 @@ bootstrap:
 	@echo "Installing zsh dependancies...."
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-	cd ~/.vim/bundle/YouCompleteMe && ./install.py --all
+	cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive && ./install.py --all
 	exit
 
 
