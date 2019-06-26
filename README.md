@@ -3,6 +3,11 @@
 </p>
 <h1 align="center">Dev Environment Config</h1>
 
+>When somebody begins a sentence with “IT WOULD BE NICE IF..” the right thing to do is to wait politely for the speaker to finish. No project ever gets around to the it-would-be-nice features: or if they do, they regret it. Wait for sentences that begin “WE HAVE TO..” and pay close attention, and see if you agree. **- Tom Van Vleck**
+ 
+> Are you a programmer? Do you wanna spend more time thinking and solving problems rather than writing biolerplate code again and again? Are you sick of bad navigation? Well this is the solution for you!
+
+<br/>
 
 ### Dev environment tools
 
@@ -56,3 +61,7 @@
 * [gotop](https://github.com/cjbassi/gotop.git)
 * [htop](https://github.com/hishamhm/htop.git)
 * [nvtop](https://github.com/Syllo/nvtop.git)
+
+<br/>
+
+Made with :heart: by Angad Sharma
