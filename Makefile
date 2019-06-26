@@ -36,6 +36,8 @@ setup:
 .PHONY: tools
 tools:
 	@echo "Collecting tools...."
+	apt get install autoconf libncursesw cmake libncurses5-dev libncursesw5-dev 
+
 	@echo "Installing htop....."
 	git clone https://github.com/hishamhm/htop.git 
 	cd htop && ./autogen.sh && ./configure && make
@@ -49,9 +51,8 @@ tools:
 	rm -rf htop gotop 
 
 	@echo "Installing nvtop....."
-	sudo apt install cmake libncurses5-dev libncursesw5-dev git
-	git clone https://github.com/Syllo/nvtop.git
-	mkdir -p nvtop/build && cd nvtop/build && cmake .. -DNVML_RETRIEVE_HEADER_ONLINE=True && make && sudo make install
+	( git clone https://github.com/Syllo/nvtop.git && \
+	mkdir -p nvtop/build && cd nvtop/build && cmake .. -DNVML_RETRIEVE_HEADER_ONLINE=True && make && sudo make install ) || echo "nvidia drivers not installed, hence ignoring nvtop"
 
 	@echo "Cleaning up nvtop"
 	rm -rf nvtop
