@@ -1,7 +1,8 @@
 # All plugins are submodules. Run this to clone them into their respectful configs
 r=$$(cat vim-plugins)
 
-.PHONY: bootstrap
+.PHONY: bootstrap setup tools
+
 bootstrap:
 
 	@echo "Bootstrapping system..."
@@ -22,7 +23,6 @@ bootstrap:
 	exit
 
 
-.PHONY: setup
 setup:
 
 	@echo "Copying new configuration...."
@@ -41,7 +41,6 @@ setup:
 	exit
 
 
-.PHONY: tools
 tools:
 
 	@echo "Collecting tools...."
