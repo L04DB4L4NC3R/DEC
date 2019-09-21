@@ -32,6 +32,7 @@ setup:
 	rm -rf ~/.vimrc ~/.zshrc ~/.config/terminator ~/.vim
 	cp -r .config/* ~/.config/
 	cp -r .vim ~/
+  cp .aliases ~/
 	cp .vimrc ~/
 	cp .zshrc ~/
 
