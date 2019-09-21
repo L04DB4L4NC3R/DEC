@@ -8,10 +8,12 @@ export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:$GOBIN"
-alias terminator="terminator -l ntree && exit"
-VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
-alias dcs="docker-compose"
 
+VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
+
+if [ -f ~/.aliases ]; then
+  source ~/.aliases
+fi
 
 ZSH_THEME="bira"
 # Set name of the theme to load --- if set to "random", it will
