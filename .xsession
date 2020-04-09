@@ -1,0 +1,2 @@
+compton &
+exec awesome

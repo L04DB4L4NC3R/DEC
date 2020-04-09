@@ -592,7 +592,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 --
 -- CUSTOM
-awful.spawn.with_shell("compton")
+-- awful.spawn.with_shell("compton")
 awful.spawn("nm-applet")
 awful.spawn("blueman-applet")
 awful.spawn.with_shell(" nitrogen --set-scaled /usr/share/backgrounds/halo.jpg")
