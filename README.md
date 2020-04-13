@@ -90,6 +90,8 @@
 ### Getting started
 Follow the following steps for instantly getting started
 
+NOTE: This script is not maintained. Install at your own risk. For help, you can take a look inside the Makefile.
+
 ```bash
 # Prerequisites:
 $ sudo apt install make # The only prerequisite!

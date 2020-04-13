@@ -1,0 +1,60 @@
+alt + p
+	dmenu_run
+
+alt + {=,-}
+  bright {,-d}
+
+alt + Return
+  terminator
+
+
+super + f
+  pkill polybar
+super + +shift + f
+  ~/.config/polybar/launch.sh
+
+# expand a window by moving one of its side outward
+alt + control + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# focus or send to the given desktop
+alt + {_,shift + }{1-9,0}
+  bspc {desktop -f,node -d} '^{1-9,10}'
+
+# quit/restart bspwm
+shift + alt + {q,r}
+	bspc {quit,wm -r}
+
+# close and kill
+alt + {_,shift + }c
+	bspc node -{c,k}
+
+
+alt + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# focus the node in the given direction
+alt + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+
+# make sxhkd reload its configuration files:
+alt + Escape
+	pkill -USR1 -x sxhkd
+
+# spawn firefox
+alt + b
+  firefox
+
+# spawn file manager
+alt + n
+  pcmanfm
+
+# to change layouts
+alt + control + {1,2,3}
+  ~/.config/bspwm/config_scheme.sh {first_child,longest_side,spiral}
