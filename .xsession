@@ -4,4 +4,5 @@ picom &
 # exec dwm
 # exec i3
 # exec awesome
-exec bspwm
+# exec bspwm
+exec spectrwm
