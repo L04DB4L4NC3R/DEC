@@ -4,4 +4,4 @@ update_interval 1.0
 total_run_times 0
 use_spacer none
 TEXT
-[ ${time %R %a,%d-%#b-%y} ] [ Mail:${new_mails} ] [ Up:${uptime_short} ] [ Temp:${acpitemp}C ] [ Battery: ${battery_percent BAT1}% ${alignr}${battery_bar 8,70 BAT1} ] [ ${addr wlan0} ] [ RAM:$memperc% ] [ CPU:${cpu}% ] [ ${downspeedf wlan0} ]
+[ ${time %R %a,%d-%#b-%y} ] [ Mail:${new_mails} ] [ Up:${uptime_short} ] [ Temp:${acpitemp}C ] [ Battery: ${battery_percent BAT1}% ${alignr}${battery_bar 3,20 BAT1} ] [ ${addr wlp0s20f3} ] [ RAM:$memperc% ] [ CPU:${cpu}% ] [ ${downspeedf wlp0s20f3} Mbps ]
