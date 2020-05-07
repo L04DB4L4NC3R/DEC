@@ -1,0 +1,19 @@
+exec picom &
+exec nitrogen --set-scaled /usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg
+exec /usr/local/bin/battery_alert 100 &
+
+# c-t r will restart ratpoison
+bind r restart 
+
+# c-t f will execute firefox
+bind f exec firefox
+
+# vim-like nav commands
+definekey top M-l focusright
+definekey top M-h focusleft
+definekey top M-j focusdown
+definekey top M-k focusup
+
+# For having multiple workspaces
+# Can be shifter by Alt-F1-6
+exec /usr/bin/rpws init 6 -k
