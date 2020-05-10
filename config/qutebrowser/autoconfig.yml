@@ -6,19 +6,10 @@
 
 config_version: 2
 settings:
-  auto_save.session:
-    global: true
-  confirm_quit:
+  input.partial_timeout:
+    global: 15000
+  url.searchengines:
     global:
-    - multiple-tabs
-    - downloads
-  content.autoplay:
-    global: false
-  fonts.default_size:
-    global: 14pt
-  fonts.web.size.default:
-    global: 18
-  qt.force_platformtheme:
-    global: null
-  scrolling.smooth:
-    global: true
+      DEFAULT: https://duckduckgo.com/?q={}
+      aw: https://wiki.archlinux.org/?search={}
+      yt: https://youtube.com/results?search_query={}
