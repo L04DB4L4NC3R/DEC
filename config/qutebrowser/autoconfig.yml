@@ -10,3 +10,4 @@ settings:
     global:
       DEFAULT: https://duckduckgo.com/?q={}
       aw: https://wiki.archlinux.org/?search={}
+      so: https://stackoverflow.com/search?q={}
