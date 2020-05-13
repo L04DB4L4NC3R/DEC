@@ -22,8 +22,11 @@ c.confirm_quit = ['multiple-tabs', 'downloads']
 # Type: String
 c.qt.force_platformtheme = None
 
+# CUSTOM
 # Add searchengines
 c.url.searchengines = {"DEFAULT": "https://duckduckgo.com/?q={}", "aw": "https://wiki.archlinux.org/?search={}", "tor": "https://www.thepìratebay.com/proxy/go.php?url=s/?q={}"}
+config.bind("<Ctrl-Shift-y>", "hint links spawn --detach mpv --force-window yes {hint-url}")
+# CUSTOM ENDS
 
 # Always restore open sites when qutebrowser is reopened.
 # Type: Bool
