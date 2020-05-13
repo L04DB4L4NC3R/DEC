@@ -22,6 +22,9 @@ c.confirm_quit = ['multiple-tabs', 'downloads']
 # Type: String
 c.qt.force_platformtheme = None
 
+# Add searchengines
+c.url.searchengines = {"DEFAULT": "https://duckduckgo.com/?q={}", "aw": "https://wiki.archlinux.org/?search={}", "tor": "https://www.thepìratebay.com/proxy/go.php?url=s/?q={}"}
+
 # Always restore open sites when qutebrowser is reopened.
 # Type: Bool
 c.auto_save.session = True

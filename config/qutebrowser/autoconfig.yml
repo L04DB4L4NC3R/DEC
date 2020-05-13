@@ -9,5 +9,5 @@ settings:
   url.searchengines:
     global:
       DEFAULT: https://duckduckgo.com/?q={}
-      aw: https://wiki.archlinux.org/search?q={}
+      aw: https://wiki.archlinux.org/?search={}
       tor: https://www.thepìratebay.com/proxy/go.php?url=s/?q={}
