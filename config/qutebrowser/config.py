@@ -26,6 +26,7 @@ c.qt.force_platformtheme = None
 # Add searchengines
 c.url.searchengines = {"DEFAULT": "https://duckduckgo.com/?q={}", "aw": "https://wiki.archlinux.org/?search={}", "tor": "https://www.thepìratebay.com/proxy/go.php?url=s/?q={}"}
 config.bind("<Ctrl-Shift-y>", "hint links spawn --detach mpv --force-window yes {hint-url}")
+config.bind("<Ctrl-y>", "spawn --detach mpv --force-window yes {url}")
 # CUSTOM ENDS
 
 # Always restore open sites when qutebrowser is reopened.
