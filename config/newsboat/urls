@@ -31,6 +31,14 @@ https://www.reddit.com/r/ProgrammerHumor/.rss
 #########|
 
 ############## NEWS ############
+# DZONE feeds:
+# https://dzone.com/pages/feeds
+# Dzone database feed
+http://feeds.dzone.com/database
+
+# Dzone opensource feed
+http://feeds.dzone.com/open-source
+
 # Arch news
 # https://www.archlinux.org/feeds/news/
 
@@ -46,8 +54,11 @@ https://news.ycombinator.com/rss
 #########|
 
 ############# PEOPLE ###########
+# Uncle Bob (the clean coder)
+https://blog.cleancoder.com/atom.xml
+
 # Joe Rogan Podcasts
-http://podcasts.joerogan.net/feed/rss
+# http://podcasts.joerogan.net/feed/rss
 
 # SVN blogs and ideas
 https://m.signalvnoise.com/feed/
@@ -63,6 +74,9 @@ https://grafana.com/blog/index.xml
 
 # Jeff Atwood's codinghorror
 http://feeds.feedburner.com/codinghorror?format=usm
+
+# Hackernoon
+https://medium.com/feed/hackernoon
 ############# PEOPLE ###########
 
 #########|
