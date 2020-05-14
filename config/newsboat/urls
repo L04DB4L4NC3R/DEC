@@ -1,17 +1,47 @@
+#          ____  ____ ____    _____             _     
+#         |  _ \/ ___/ ___|  |  ___|__  ___  __| |___ 
+#         | |_) \___ \___ \  | |_ / _ \/ _ \/ _` / __|
+#         |  _ < ___) |__) | |  _|  __/  __/ (_| \__ \
+#         |_| \_\____/____/  |_|  \___|\___|\__,_|___/
+#                    _________________
+#                   < Subscribe to em >
+#                    -----------------
+#                           \   ^__^
+#                            \  (oo)\_______
+#                               (__)\       )\/\
+#                                   ||----w |
+#                                   ||     ||
+
+
+############ Comedy ############
+# Oatmeal comics
+http://feeds.feedburner.com/oatmealfeed?format=usm
+
+# XKCD comics
+https://xkcd.com/rss.xml
+############ Comedy ############
+
+#########|
+#########|
+
+############## NEWS ############
 # Arch news
-https://www.archlinux.org/feeds/news/
+# https://www.archlinux.org/feeds/news/
 
 # Hacker news
 https://news.ycombinator.com/rss
 
-# Joe Rogan Podcasts
-http://podcasts.joerogan.net/feed/rss
-
 # Stack Abuse
 https://stackabuse.com/rss/
 
-# XKCD comics
-https://xkcd.com/rss.xml
+############## NEWS ############
+
+#########|
+#########|
+
+############# PEOPLE ###########
+# Joe Rogan Podcasts
+http://podcasts.joerogan.net/feed/rss
 
 # SVN blogs and ideas
 https://m.signalvnoise.com/feed/
@@ -19,11 +49,34 @@ https://m.signalvnoise.com/feed/
 # Martin Fowler bliki atom feed
 https://martinfowler.com/feed.atom
 
-# Oatmeal comics
-http://feeds.feedburner.com/oatmealfeed?format=usm
+# Linux on DEV
+https://dev.to/feed/tag/linux
+############# PEOPLE ###########
+
+#########|
+#########|
+
+########## Dev Podcasts #########
+# Darknet diaries
+https://feeds.megaphone.fm/darknetdiaries
+
+# The changelog
+https://changelog.com/podcast/feed
+
+# The stackoverflow podcast
+https://stackoverflow.blog/feed/
+########## Dev Podcasts #########
+
+#########|
+#########|
+
+############ My Feed ############
+# Angad Sharma Medium feed
+https://medium.com/feed/@angadsharma1016
 
 # My DEV feed
 https://dev.to/feed/l04db4l4nc3r
 
-# Linux on DEV
-https://dev.to/feed/tag/linux
+# DSC VIT Medium feed
+https://medium.com/feed/gdg-vit
+############ My Feed ############
