@@ -9,6 +9,11 @@ export GOBIN=$HOME/go/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:$GOBIN"
 
+# to be able to run qutebrowser as root
+export QTWEBENGINE_DISABLE_SANDBOX=1
+# for newsboat
+export BROWSER=qutebrowser
+
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
 if [ -f ~/.aliases ]; then
