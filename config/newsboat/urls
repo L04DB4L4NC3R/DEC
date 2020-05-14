@@ -17,8 +17,14 @@
 # Oatmeal comics
 http://feeds.feedburner.com/oatmealfeed?format=usm
 
+# Explosm (Cyanide and happiness)
+http://feeds.feedburner.com/explosm?format=usm
+
 # XKCD comics
 https://xkcd.com/rss.xml
+
+# Programmer Humour
+https://www.reddit.com/r/ProgrammerHumor/.rss
 ############ Comedy ############
 
 #########|
@@ -32,7 +38,7 @@ https://xkcd.com/rss.xml
 https://news.ycombinator.com/rss
 
 # Stack Abuse
-https://stackabuse.com/rss/
+# https://stackabuse.com/rss/
 
 ############## NEWS ############
 
@@ -51,6 +57,12 @@ https://martinfowler.com/feed.atom
 
 # Linux on DEV
 https://dev.to/feed/tag/linux
+
+# Grafana blog
+https://grafana.com/blog/index.xml
+
+# Jeff Atwood's codinghorror
+http://feeds.feedburner.com/codinghorror?format=usm
 ############# PEOPLE ###########
 
 #########|
@@ -70,6 +82,18 @@ https://stackoverflow.blog/feed/
 #########|
 #########|
 
+######### Reddit ###############
+# Linux
+https://www.reddit.com/r/linux/.rss
+
+# Programming
+https://www.reddit.com/r/programming/.rss
+######### Reddit ###############
+
+#########|
+#########|
+
+############ My Feed ############
 ############ My Feed ############
 # Angad Sharma Medium feed
 https://medium.com/feed/@angadsharma1016
