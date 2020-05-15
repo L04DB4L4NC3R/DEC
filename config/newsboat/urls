@@ -77,6 +77,9 @@ http://feeds.feedburner.com/codinghorror?format=usm
 
 # Hackernoon
 https://medium.com/feed/hackernoon
+
+# DevDiscuss, the dev podcast
+https://feeds.devpods.dev/devdiscuss_podcast.xml "Podcast"
 ############# PEOPLE ###########
 
 #########|
@@ -84,13 +87,13 @@ https://medium.com/feed/hackernoon
 
 ########## Dev Podcasts #########
 # Darknet diaries
-https://feeds.megaphone.fm/darknetdiaries
+https://feeds.megaphone.fm/darknetdiaries "Podcast"
 
 # The changelog
-https://changelog.com/podcast/feed
+https://changelog.com/podcast/feed "Podcast"
 
 # The stackoverflow podcast
-https://stackoverflow.blog/feed/
+https://stackoverflow.blog/feed/ "Podcast"
 ########## Dev Podcasts #########
 
 #########|
@@ -109,6 +112,9 @@ https://www.reddit.com/r/programming/.rss
 
 ############ My Feed ############
 ############ My Feed ############
+# Angad Sharma GitHub feed
+# https://github.com/L04DB4L4NC3R.private.atom?token=<your token>
+
 # Angad Sharma Medium feed
 https://medium.com/feed/@angadsharma1016
 
