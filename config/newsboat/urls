@@ -13,7 +13,7 @@
 #                                   ||     ||
 
 
-############ Comedy ############
+------------Comedy------------
 # Oatmeal comics
 http://feeds.feedburner.com/oatmealfeed?format=usm
 
@@ -24,23 +24,24 @@ http://feeds.feedburner.com/explosm?format=usm
 https://xkcd.com/rss.xml
 
 # Programmer Humour
-https://www.reddit.com/r/ProgrammerHumor/.rss
-############ Comedy ############
+https://www.reddit.com/r/ProgrammerHumor/.rss "~r/programmerhumour"
 
-#########|
-#########|
 
-############## NEWS ############
+
+
+
+
+--------------NEWS------------
 # DZONE feeds:
 # https://dzone.com/pages/feeds
 # Dzone database feed
-http://feeds.dzone.com/database
+http://feeds.dzone.com/database "~Dzone Database"
 
 # Dzone opensource feed
-http://feeds.dzone.com/open-source
+http://feeds.dzone.com/open-source "~Dzone OSS"
 
 # Arch news
-# https://www.archlinux.org/feeds/news/
+https://www.archlinux.org/feeds/news/
 
 # Hacker news
 https://news.ycombinator.com/rss
@@ -48,12 +49,12 @@ https://news.ycombinator.com/rss
 # Stack Abuse
 # https://stackabuse.com/rss/
 
-############## NEWS ############
 
-#########|
-#########|
 
-############# PEOPLE ###########
+
+
+
+-------------PEOPLE-----------
 # Uncle Bob (the clean coder)
 https://blog.cleancoder.com/atom.xml
 
@@ -67,7 +68,7 @@ https://m.signalvnoise.com/feed/
 https://martinfowler.com/feed.atom
 
 # Linux on DEV
-https://dev.to/feed/tag/linux
+https://dev.to/feed/tag/linux "~Linux on DEV.to"
 
 # Grafana blog
 https://grafana.com/blog/index.xml
@@ -80,12 +81,12 @@ https://medium.com/feed/hackernoon
 
 # DevDiscuss, the dev podcast
 https://feeds.devpods.dev/devdiscuss_podcast.xml "Podcast"
-############# PEOPLE ###########
 
-#########|
-#########|
 
-########## Dev Podcasts #########
+
+
+
+----------Dev-Podcasts---------
 # Darknet diaries
 https://feeds.megaphone.fm/darknetdiaries "Podcast"
 
@@ -94,33 +95,31 @@ https://changelog.com/podcast/feed "Podcast"
 
 # The stackoverflow podcast
 https://stackoverflow.blog/feed/ "Podcast"
-########## Dev Podcasts #########
 
-#########|
-#########|
 
-######### Reddit ###############
+
+
+
+---------Reddit---------------
 # Linux
-https://www.reddit.com/r/linux/.rss
+https://www.reddit.com/r/linux/.rss "~r/linux"
 
 # Programming
-https://www.reddit.com/r/programming/.rss
-######### Reddit ###############
+https://www.reddit.com/r/programming/.rss "~r/programming"
 
-#########|
-#########|
 
-############ My Feed ############
-############ My Feed ############
+
+
+
+------------My-Feed------------
 # Angad Sharma GitHub feed
 # https://github.com/L04DB4L4NC3R.private.atom?token=<your token>
 
 # Angad Sharma Medium feed
-https://medium.com/feed/@angadsharma1016
+https://medium.com/feed/@angadsharma1016 "~Angad: Medium Feed"
 
 # My DEV feed
-https://dev.to/feed/l04db4l4nc3r
+https://dev.to/feed/l04db4l4nc3r "~Angad: DEV Feed"
 
 # DSC VIT Medium feed
-https://medium.com/feed/gdg-vit
-############ My Feed ############
+https://medium.com/feed/gdg-vit "~DSC VIT: Medium Feed"
