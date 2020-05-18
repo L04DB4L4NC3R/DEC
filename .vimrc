@@ -19,6 +19,7 @@ set tabstop=2
 
 " Mapping for fast quit without save
 noremap <Backspace> :q<cr>
+set backspace=indent,eol,start
 
 " Display line numbers
 set nu
