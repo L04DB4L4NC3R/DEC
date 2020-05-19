@@ -27,7 +27,7 @@ Config { font    = "xft:Mononoki Nerd Font:pixelsize=14:antialias=true:hinting=t
 								, Run Memory ["-t", "\xf233 mem: <used>M (<usedratio>%)"] 20
 
 								-- Disk space free
-								, Run DiskU [("/", "\xf0c7 hdd: <free> free")] [] 60
+								, Run DiskU [("/home", "\xf0c7 hdd: <free> free")] [] 60
 								
 								-- Battery
 								, Run Battery        [ 
