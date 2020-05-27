@@ -7,12 +7,13 @@ export ZSH="/home/angad/.oh-my-zsh"
 export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
 export PATH=$PATH:/usr/local/go/bin
-export PATH="$PATH:$GOBIN"
+export PATH="$PATH:$GOBIN:$HOME/.cargo/bin:$HOME/.local/bin"
 
 # to be able to run qutebrowser as root
-export QTWEBENGINE_DISABLE_SANDBOX=1
+# export QTWEBENGINE_DISABLE_SANDBOX=1
 # for newsboat
 export BROWSER=qutebrowser
+alias postwoman="docker run -p 3000:3000 -d --name postwoman liyasthomas/postwoman:latest"
 
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
@@ -20,7 +21,11 @@ if [ -f ~/.aliases ]; then
   source ~/.aliases
 fi
 
-ZSH_THEME="bira"
+ZSH_THEME="zhann"
+#ZSH_THEME="bira"
+#ZSH_THEME="nebirhos"
+
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -75,7 +80,7 @@ ZSH_THEME="bira"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,underline"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
@@ -84,11 +89,13 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(git
 				zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-autosuggestions
+
 
 # User configuration
 
@@ -115,3 +122,8 @@ source ~/.zsh/zsh-autosuggestions
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+neofetch
+#espeak -p 90 "you have spawned a new terminal" &>/dev/null
+alias l="lsd -Al"
+alias ls="lsd"
