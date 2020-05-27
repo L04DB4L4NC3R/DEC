@@ -14,9 +14,6 @@ let g:go_def_mode = "gopls"
 " Switch mouse on
 set mouse=a 
 
-" Set Tab size to 2
-set tabstop=2
-
 " Mapping for fast quit without save
 noremap <Backspace> :q<cr>
 set backspace=indent,eol,start
@@ -46,6 +43,7 @@ endfunction
 noremap <NUL> :call SplitAndDef()
 
 " For cplouring the terminal
+" This enables vim airline
 set laststatus=2
 
 " For multicursor select
@@ -80,3 +78,15 @@ autocmd FileType html,css EmmetInstall
 
 " For YouCompleteMe
 set encoding=utf-8
+
+set autoindent
+set smartindent
+
+" Tab settings
+" Set Tab size to 1
+set tabstop=4
+" Helpful when using TAB
+set softtabstop=0 noexpandtab
+" Indent a single tab
+set shiftwidth=4
+
