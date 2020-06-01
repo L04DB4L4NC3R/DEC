@@ -24,7 +24,7 @@ http://feeds.feedburner.com/explosm?format=usm
 https://xkcd.com/rss.xml
 
 # Programmer Humour
-https://www.reddit.com/r/ProgrammerHumor/.rss "~r/programmerhumour"
+# https://www.reddit.com/r/ProgrammerHumor/.rss "~r/programmerhumour"
 
 
 
@@ -123,3 +123,6 @@ https://dev.to/feed/l04db4l4nc3r "~Angad: DEV Feed"
 
 # DSC VIT Medium feed
 https://medium.com/feed/gdg-vit "~DSC VIT: Medium Feed"
+
+# DSC VIT GitHub Feed
+https://github.com/organizations/GDGVIT/L04DB4L4NC3R.private.atom?token=AHI5QJHMFKTWD2V4BUE7JZF4264NA
