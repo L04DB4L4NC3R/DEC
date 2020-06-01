@@ -29,8 +29,7 @@
 
 <br/>
 
-
-![image](https://user-images.githubusercontent.com/30529572/60173214-dd942500-982b-11e9-8741-e867f2bbce70.png)
+![ss](https://user-images.githubusercontent.com/30529572/83451951-5130b000-a447-11ea-9aad-d8686aeedee4.png)
 
 <br/>
 
