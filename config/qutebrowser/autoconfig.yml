@@ -6,7 +6,5 @@
 
 config_version: 2
 settings:
-  content.desktop_capture:
-    global: true
-  content.media_capture:
-    https://hangouts.google.com: true
+  content.notifications:
+    https://www.reddit.com: false

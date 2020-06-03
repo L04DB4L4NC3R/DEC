@@ -1,0 +1,114 @@
+#!/usr/bin/env python3
+
+# Copyright (c) 2017 Ondřej Kudlík (Kepi), https://kepi.cz
+
+# qutepocket is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# qutepocket is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with qutebrowser.  If not, see <http://www.gnu.org/licenses/>.
+
+import os
+
+from pocket import Pocket, PocketAutException, PocketException
+
+CONSUMER_KEY = "70250-26f8e47a9dba2989767f4512"
+REDIRECT_URI = "https://github.com/kepi/qutepocket/wiki/Authorized"
+
+SECRET = os.environ['QUTE_CONFIG_DIR'] + '/qutepocket.secrets'
+REQUEST = os.environ['QUTE_CONFIG_DIR'] + '/qutepocket.request'
+
+FIFO = open(os.environ['QUTE_FIFO'], 'w')
+
+
+def command(command):
+    FIFO.write(command + "\n")
+
+
+def get_request_token():
+    request_token = pocket.get_request_token(REDIRECT_URI)
+
+    if not request_token:
+        exit(11)
+
+    with open(REQUEST, 'w') as request_file:
+        request_file.write(request_token)
+
+    auth_url = ("https://getpocket.com/auth/authorize"
+                "?request_token={0}"
+                "&redirect_uri={1}"
+                ).format(request_token, REDIRECT_URI)
+
+    msg = ("Accept access, close opened page and use "
+           "Save to Pocket command again.")
+
+    command('open -t %s' % auth_url)
+    command('message-info "%s"' % msg)
+    exit(0)
+
+
+def get_access_token():
+    try:
+        with open(REQUEST) as request_file:
+            request_token = request_file.read()
+
+        access_token = pocket.get_access_token(request_token)
+        print(access_token)
+        with open(SECRET, 'w') as request_file:
+            request_file.write(access_token)
+            os.remove(REQUEST)
+
+            msg = "Congratulation, qutepocket is authorized now :)"
+            command('message-info "%s"' % msg)
+
+    except PocketAutException:
+        os.remove(REQUEST)
+        get_request_token()
+        exit(12)
+
+
+def reauthorize():
+    command('message-warning "Invalid secret token, trying to reauthorize."')
+    if os.path.isfile(SECRET):
+        os.remove(SECRET)
+
+    get_request_token()
+
+
+def add():
+    try:
+        pocket.add(os.environ['QUTE_URL'], os.environ['QUTE_TITLE'])
+        command('message-info "Great, page is in your Pocket."')
+
+    except PocketException as e:
+        # secret token e
+        if e.error_code == 107:
+            reauthorize()
+
+        else:
+            command('message-warning "Error while Pocketing the page: %s %s"'
+                    % (e.message, e.error_code))
+
+
+if not os.path.isfile(SECRET):
+    access_token = ""
+    pocket = Pocket(CONSUMER_KEY, access_token)
+
+    if os.path.isfile(REQUEST):
+        get_access_token()
+    else:
+        get_request_token()
+
+with open(SECRET) as secrets_file:
+    access_token = secrets_file.read()
+    pocket = Pocket(CONSUMER_KEY, access_token)
+    add()
+
+FIFO.close()
