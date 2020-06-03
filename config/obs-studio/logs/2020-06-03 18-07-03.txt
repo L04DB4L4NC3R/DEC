@@ -1,0 +1,86 @@
+06:07:03 PM.609: Command Line Arguments: obs
+06:07:03 PM.625: CPU Name: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+06:07:03 PM.625: CPU Speed: 3973.506MHz
+06:07:03 PM.626: Physical Cores: 6, Logical Cores: 12
+06:07:03 PM.626: Physical Memory: 15855MB Total, 7460MB Free
+06:07:03 PM.626: Kernel Version: Linux 5.6.15-arch1-1
+06:07:03 PM.626: Distribution: "Arch Linux" Unknown
+06:07:03 PM.626: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.20.8
+06:07:03 PM.627: Portable mode: false
+06:07:03 PM.652: OBS 25.0.8-1 (linux)
+06:07:03 PM.652: ---------------------------------
+06:07:03 PM.652: ---------------------------------
+06:07:03 PM.652: audio settings reset:
+06:07:03 PM.652: 	samples per sec: 48000
+06:07:03 PM.652: 	speakers:        2
+06:07:03 PM.657: ---------------------------------
+06:07:03 PM.657: Initializing OpenGL...
+06:07:03 PM.734: Loading up OpenGL on adapter Intel Mesa Intel(R) UHD Graphics 630 (CFL GT2)
+06:07:03 PM.734: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 20.0.7, shading language 4.60
+06:07:03 PM.745: ---------------------------------
+06:07:03 PM.745: video settings reset:
+06:07:03 PM.745: 	base resolution:   1920x1080
+06:07:03 PM.745: 	output resolution: 1920x1080
+06:07:03 PM.745: 	downscale filter:  Bicubic
+06:07:03 PM.745: 	fps:               60/1
+06:07:03 PM.745: 	format:            NV12
+06:07:03 PM.745: 	YUV mode:          601/Partial
+06:07:03 PM.745: NV12 texture support not available
+06:07:03 PM.746: Audio monitoring device:
+06:07:03 PM.746: 	name: Default
+06:07:03 PM.746: 	id: default
+06:07:03 PM.746: ---------------------------------
+06:07:03 PM.747: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+06:07:03 PM.748: os_dlopen(/usr//lib/obs-plugins/frontend-tools.so->/usr//lib/obs-plugins/frontend-tools.so): libluajit-5.1.so.2: cannot open shared object file: No such file or directory
+06:07:03 PM.748: 
+06:07:03 PM.748: Module '/usr//lib/obs-plugins/frontend-tools.so' not loaded
+06:07:03 PM.751: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+06:07:03 PM.751: No blackmagic support
+06:07:03 PM.760: NVENC supported
+06:07:03 PM.760: FFMPEG VAAPI supported
+06:07:03 PM.761: os_dlopen(/usr//lib/obs-plugins/obs-libfdk.so->/usr//lib/obs-plugins/obs-libfdk.so): libfdk-aac.so.2: cannot open shared object file: No such file or directory
+06:07:03 PM.761: 
+06:07:03 PM.761: Module '/usr//lib/obs-plugins/obs-libfdk.so' not loaded
+06:07:03 PM.766: os_dlopen(libvlc.so.5->libvlc.so.5): libvlc.so.5: cannot open shared object file: No such file or directory
+06:07:03 PM.766: 
+06:07:03 PM.766: Couldn't find VLC installation, VLC video source disabled
+06:07:03 PM.766: ---------------------------------
+06:07:03 PM.766:   Loaded Modules:
+06:07:03 PM.766:     vlc-video.so
+06:07:03 PM.766:     text-freetype2.so
+06:07:03 PM.766:     rtmp-services.so
+06:07:03 PM.766:     obs-x264.so
+06:07:03 PM.766:     obs-transitions.so
+06:07:03 PM.766:     obs-outputs.so
+06:07:03 PM.766:     obs-filters.so
+06:07:03 PM.766:     obs-ffmpeg.so
+06:07:03 PM.766:     linux-v4l2.so
+06:07:03 PM.766:     linux-pulseaudio.so
+06:07:03 PM.766:     linux-jack.so
+06:07:03 PM.766:     linux-decklink.so
+06:07:03 PM.766:     linux-capture.so
+06:07:03 PM.766:     linux-alsa.so
+06:07:03 PM.766:     image-source.so
+06:07:03 PM.766:     decklink-ouput-ui.so
+06:07:03 PM.766: ---------------------------------
+06:07:03 PM.766: ==== Startup complete ===============================================
+06:07:03 PM.767: All scene data cleared
+06:07:03 PM.767: ------------------------------------------------
+06:07:03 PM.769: pulse-input: Server name: 'pulseaudio 13.0'
+06:07:03 PM.769: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+06:07:03 PM.769: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+06:07:03 PM.769: [Loaded global audio device]: 'Desktop Audio'
+06:07:03 PM.770: pulse-input: Server name: 'pulseaudio 13.0'
+06:07:03 PM.770: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+06:07:03 PM.770: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+06:07:03 PM.770: [Loaded global audio device]: 'Mic/Aux'
+06:07:03 PM.771: xshm-input: Geometry 1920x1080 @ 0,0
+06:07:03 PM.771: Switched to scene 'Scene'
+06:07:03 PM.771: ------------------------------------------------
+06:07:03 PM.771: Loaded scenes:
+06:07:03 PM.771: - scene 'Scene':
+06:07:03 PM.771:     - source: 'Screen Capture (XSHM)' (xshm_input)
+06:07:03 PM.771: ------------------------------------------------
+06:07:06 PM.073: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+06:07:06 PM.073: 
+06:07:36 PM.640: [rtmp-services plugin] Remote update of URL "https://obsproject.com/obs2_update/rtmp-services/package.json" failed: Empty reply from server
