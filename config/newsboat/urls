@@ -11,118 +11,131 @@
 #                               (__)\       )\/\
 #                                   ||----w |
 #                                   ||     ||
+#
+# NOTE: Nerd font required for the icons
+
+---->[My--Feed]----------->||||||||
+# DSC VIT GitHub Feed
+https://github.com/organizations/GDGVIT/L04DB4L4NC3R.private.atom?token=AHI5QJHMFKTWD2V4BUE7JZF4264NA "~DSC VIT GitHub "
+
+# Angad Sharma GitHub feed
+https://github.com/L04DB4L4NC3R.private.atom?token=<your token> "~My GitHub "
+
+# Angad Sharma Medium feed
+# https://medium.com/feed/@angadsharma1016 "~Angad: Medium Feed"
+
+# My DEV feed
+# https://dev.to/feed/l04db4l4nc3r "~Angad: DEV Feed"
+
+# DSC VIT Medium feed
+# https://medium.com/feed/gdg-vit "~DSC VIT: Medium Feed"
 
 
-------------Comedy------------
-# Oatmeal comics
-http://feeds.feedburner.com/oatmealfeed?format=usm
-
-# Explosm (Cyanide and happiness)
-http://feeds.feedburner.com/explosm?format=usm
-
-# XKCD comics
-https://xkcd.com/rss.xml
-
-# Programmer Humour
-# https://www.reddit.com/r/ProgrammerHumor/.rss "~r/programmerhumour"
 
 
 
-
-
-
---------------NEWS------------
+---->[NEWS--]------------->||||||||
 # DZONE feeds:
 # https://dzone.com/pages/feeds
 # Dzone database feed
-http://feeds.dzone.com/database "~Dzone Database"
+http://feeds.dzone.com/database "~Dzone DBMS "
 
 # Dzone opensource feed
-http://feeds.dzone.com/open-source "~Dzone OSS"
+http://feeds.dzone.com/open-source "~Dzone OSS "
 
 # Arch news
-https://www.archlinux.org/feeds/news/
+https://www.archlinux.org/feeds/news/ "~Arch News "
 
 # Hacker news
-https://news.ycombinator.com/rss
+https://news.ycombinator.com/rss "~HackerNews "
 
 # Stack Abuse
-# https://stackabuse.com/rss/
+https://stackabuse.com/rss/ "~Stack Abuse "
+
+# Upcoming CFPs
+https://feeds.cfpland.com/v2/rss/cfps "~Upcoming CFPs "
+
+# Its FOSS
+https://itsfoss.com/feed/ "~Its FOSS "
 
 
 
 
 
-
--------------PEOPLE-----------
+---->[PERSONAL--BLOGS]---->||||||||
 # Uncle Bob (the clean coder)
-https://blog.cleancoder.com/atom.xml
+https://blog.cleancoder.com/atom.xml "~Uncle Bob "
 
 # Joe Rogan Podcasts
 # http://podcasts.joerogan.net/feed/rss
 
 # SVN blogs and ideas
-https://m.signalvnoise.com/feed/
+https://m.signalvnoise.com/feed/ "~Signal v/s Noise ﲁ"
 
 # Martin Fowler bliki atom feed
-https://martinfowler.com/feed.atom
+https://martinfowler.com/feed.atom "~Martin Fowler "
 
 # Linux on DEV
-https://dev.to/feed/tag/linux "~Linux on DEV.to"
+https://dev.to/feed/tag/icymi "~DEV.to Digest "
+
+# Linux on DEV
+https://dev.to/feed/tag/linux "~Linux on DEV.to "
 
 # Grafana blog
-https://grafana.com/blog/index.xml
+https://grafana.com/blog/index.xml "~Grafana "
 
 # Jeff Atwood's codinghorror
-http://feeds.feedburner.com/codinghorror?format=usm
+http://feeds.feedburner.com/codinghorror?format=usm "~Jeff Atwood Coding Horror "
 
 # Hackernoon
-https://medium.com/feed/hackernoon
+https://medium.com/feed/hackernoon "~Hackernoon "
 
-# DevDiscuss, the dev podcast
-https://feeds.devpods.dev/devdiscuss_podcast.xml "Podcast"
-
-
+# Ivan blog
+https://iximiuz.com/feed.atom "~Ivan on linux "
 
 
 
-----------Dev-Podcasts---------
+
+
+---->[Dev--Podcasts]------>||||||||
 # Darknet diaries
-https://feeds.megaphone.fm/darknetdiaries "Podcast"
+https://feeds.megaphone.fm/darknetdiaries "~Darknet Dairies Podcast "
 
 # The changelog
-https://changelog.com/podcast/feed "Podcast"
+https://changelog.com/podcast/feed "~ChangeLog Podcast "
 
 # The stackoverflow podcast
-https://stackoverflow.blog/feed/ "Podcast"
+https://stackoverflow.blog/feed/ "~StackOverflow Blog "
+
+# DevDiscuss, the dev podcast
+https://feeds.devpods.dev/devdiscuss_podcast.xml "~DEV Podcast "
 
 
 
 
 
----------Reddit---------------
+---->[Reddit--]----------->||||||||
 # Linux
-https://www.reddit.com/r/linux/.rss "~r/linux"
+https://www.reddit.com/r/linux/.rss "~r/linux "
 
 # Programming
-https://www.reddit.com/r/programming/.rss "~r/programming"
+https://www.reddit.com/r/programming/.rss "~r/programming "
 
 
 
 
+---->[Comedy---Feed]------>||||||||
+# Explosm (Cyanide and happiness)
+http://feeds.feedburner.com/explosm?format=usm "~Cyanide and Happiness "
 
-------------My-Feed------------
-# Angad Sharma GitHub feed
-# https://github.com/L04DB4L4NC3R.private.atom?token=<your token>
+# XKCD comics
+https://xkcd.com/rss.xml "~XKCD Comics "
 
-# Angad Sharma Medium feed
-https://medium.com/feed/@angadsharma1016 "~Angad: Medium Feed"
+# Funny RSS feed
+https://www.reddit.com/r/funny/.rss "~r/funny "
 
-# My DEV feed
-https://dev.to/feed/l04db4l4nc3r "~Angad: DEV Feed"
+# Oatmeal comics
+http://feeds.feedburner.com/oatmealfeed?format=usm "~Oatmeal Comics "
 
-# DSC VIT Medium feed
-https://medium.com/feed/gdg-vit "~DSC VIT: Medium Feed"
-
-# DSC VIT GitHub Feed
-https://github.com/organizations/GDGVIT/L04DB4L4NC3R.private.atom?token=AHI5QJHMFKTWD2V4BUE7JZF4264NA
+# Programmer Humour
+# https://www.reddit.com/r/ProgrammerHumor/.rss "~r/programmerhumour"
