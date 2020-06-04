@@ -19,7 +19,7 @@
 https://github.com/organizations/GDGVIT/L04DB4L4NC3R.private.atom?token=AHI5QJHMFKTWD2V4BUE7JZF4264NA "~DSC VIT GitHub "
 
 # Angad Sharma GitHub feed
-https://github.com/L04DB4L4NC3R.private.atom?token=<your token> "~My GitHub "
+https://github.com/L04DB4L4NC3R.private.atom?token=AHI5QJH7H5DU7SQTTB63AX544THZ6 "~My GitHub "
 
 # Angad Sharma Medium feed
 # https://medium.com/feed/@angadsharma1016 "~Angad: Medium Feed"
@@ -41,7 +41,7 @@ https://github.com/L04DB4L4NC3R.private.atom?token=<your token> "~My GitHub "
 http://feeds.dzone.com/database "~Dzone DBMS "
 
 # Dzone opensource feed
-http://feeds.dzone.com/open-source "~Dzone OSS "
+# http://feeds.dzone.com/open-source "~Dzone OSS "
 
 # Arch news
 https://www.archlinux.org/feeds/news/ "~Arch News "
@@ -130,6 +130,9 @@ http://feeds.feedburner.com/explosm?format=usm "~Cyanide and Happiness "
 
 # XKCD comics
 https://xkcd.com/rss.xml "~XKCD Comics "
+
+# Jokes RSS feed
+https://www.reddit.com/r/Jokes/.rss "~r/Jokes "
 
 # Funny RSS feed
 https://www.reddit.com/r/funny/.rss "~r/funny "

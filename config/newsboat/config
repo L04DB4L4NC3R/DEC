@@ -1,4 +1,4 @@
-auto-reload yes
+# auto-reload yes
 
 unbind-key j
 unbind-key k
@@ -8,6 +8,7 @@ unbind-key L
 unbind-key c
 unbind-key ,
 
+macro s save "/tmp/tmp.txt" ; set browser "~/.config/newsboat/joplin.sh %u"; open-in-browser ; set browser "qutebrowser %u"
 macro w set browser "mpv %u" ; open-in-browser ; set browser "qutebrowser %u"
 
 # bind keys
