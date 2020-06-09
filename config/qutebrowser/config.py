@@ -27,8 +27,12 @@ c.qt.force_platformtheme = None
 config.bind("sp", "spawn --userscript qutepocket")
 
 c.url.searchengines = {"DEFAULT": "https://duckduckgo.com/?q={}", "aw": "https://wiki.archlinux.org/?search={}", "tor": "https://www.thepìratebay.com/proxy/go.php?url=s/?q={}"}
-config.bind("<Ctrl-Shift-y>", "hint links spawn --detach mpv --force-window yes {hint-url}")
-config.bind("<Ctrl-y>", "spawn --detach mpv --force-window yes {url}")
+config.bind("<Ctrl-Shift-m>", "hint links spawn --detach mpv --force-window yes {hint-url}")
+config.bind("<Ctrl-m>", "spawn --detach mpv --force-window yes {url}")
+
+# Download YT videos
+config.bind("<Ctrl-d>", "spawn --detach youtube-dl {url}")
+config.bind("<Ctrl-Shift-d>", "hint links spawn --detach youtube-dl {hint-url}")
 # CUSTOM ENDS
 
 # Always restore open sites when qutebrowser is reopened.
