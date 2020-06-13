@@ -28,9 +28,16 @@ set relativenumber
 set noswapfile
 
 " VSCODE colorscheme
-set t_Co=256
-set t_ut=
+" set t_Co=256
+" set t_ut=
+
+
 " colorscheme codedark
+
+" colorscheme dracula
+" https://draculatheme.com/vim
+packadd! dracula
+colorscheme dracula
 
 " Open GoDef in different pane
 cnoreabbrev gd GoDef
@@ -69,8 +76,8 @@ map <s-k> <c-w>-
 map <s-h> <c-w><
 map <s-l> <c-w>>
 
-noremap <c-o> :split
-noremap <c-e> :vsplit
+noremap <c-o> :split<CR>
+noremap <c-e> :vsplit<CR>
 
 " Enable emmet vim for just html and css
 let g:user_emmet_install_global = 0
@@ -90,3 +97,7 @@ set softtabstop=0 noexpandtab
 " Indent a single tab
 set shiftwidth=4
 
+" Automatically closing braces
+inoremap {<CR> {<CR>}<Esc>ko
+inoremap [<CR> [<CR>]<Esc>ko
+inoremap (<CR> (<CR>)<Esc>ko
