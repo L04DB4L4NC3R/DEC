@@ -1,10 +1,3 @@
--- The xmonad configuration of Derek Taylor (DistroTube)
--- http://www.youtube.com/c/DistroTube
--- http://www.gitlab.com/dwt1/
-
-------------------------------------------------------------------------
----IMPORTS
-------------------------------------------------------------------------
     -- Base
 import XMonad
 import XMonad.Config.Desktop
@@ -67,9 +60,6 @@ import XMonad.Layout.IM (withIM, Property(Role))
     -- Prompts
 import XMonad.Prompt (defaultXPConfig, XPConfig(..), XPPosition(Top), Direction1D(..))
 
-------------------------------------------------------------------------
----CONFIG
-------------------------------------------------------------------------
 myFont          = "xft:JetBrainsMono Nerd Font:regular:pixelsize=12"
 myModMask       = mod1Mask  -- Sets modkey to super/windows key
 myTerminal      = "alacritty"      -- Sets default terminal
@@ -78,9 +68,7 @@ myBorderWidth   = 4         -- Sets border width for windows
 windowCount     = gets $ Just . show . length . W.integrate' . W.stack . W.workspace . W.current . windowset
 
 main = do
-    -- Launching three instances of xmobar on their monitors.
     xmproc0 <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc0"
-    -- the xmonad, ya know...what the WM is named after!
     xmonad $ ewmh desktopConfig
         { manageHook = ( isFullscreen --> doFullFloat ) <+> myManageHook <+> manageHook desktopConfig <+> manageDocks
         , logHook = dynamicLogWithPP xmobarPP
@@ -105,23 +93,16 @@ main = do
         , focusedBorderColor = "#bbc5ff"
         } `additionalKeysP`         myKeys 
 
-------------------------------------------------------------------------
+
 ---AUTOSTART
-------------------------------------------------------------------------
 myStartupHook = do
-          spawnOnce "nitrogen --set-scaled ~/Photos/wp.jpg" 
+          spawnOnce "nitrogen --set-scaled ~/Photos/wallpapers/cyberwolf.png" 
           spawnOnce "picom &"
           spawnOnce "xset r rate 200 25"
-          -- spawnOnce "nm-applet &"
-          -- spawnOnce "volumeicon &"
-          -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x292d3e --height 18 &"
-          --spawnOnce "emacs --daemon &" 
-          setWMName "LG3D"
+          setWMName "XMonad"
 
-------------------------------------------------------------------------
+
 ---GRID SELECT
-------------------------------------------------------------------------
-
 myColorizer :: Window -> Bool -> X (String, String)
 myColorizer = colorRangeFromClassName
                   (0x31,0x2e,0x39) -- lowest inactive bg
@@ -144,9 +125,8 @@ spawnSelected' :: [(String, String)] -> X ()
 spawnSelected' lst = gridselect conf lst >>= flip whenJust spawn
     where conf = defaultGSConfig
 
-------------------------------------------------------------------------
+
 ---KEYBINDINGS
-------------------------------------------------------------------------
 myKeys =
     -- Xmonad
         [ ("M-C-r", spawn "xmonad --recompile")      -- Recompiles xmonad
@@ -164,21 +144,11 @@ myKeys =
     -- Grid Select
         , (("M-S-t"), spawnSelected'
           [ ("Audacity", "audacity")
-          , ("Deadbeef", "deadbeef")
-          , ("Emacs", "emacs")
           , ("Firefox", "firefox")
-          , ("Geany", "geany")
-          , ("Geary", "geary")
           , ("Gimp", "gimp")
           , ("Kdenlive", "kdenlive")
-          , ("LibreOffice Impress", "loimpress")
-          , ("LibreOffice Writer", "lowriter")
           , ("OBS", "obs")
-          , ("PCManFM", "pcmanfm")
-          , ("Simple Terminal", "st")
           , ("Steam", "steam")
-          , ("Surf Browser",    "surf suckless.org")
-          , ("Xonotic", "xonotic-glx")
           ])
 
         , ("M-S-g", goToSelected $ mygridConfig myColorizer)
@@ -239,15 +209,10 @@ myKeys =
         , ("M-S-<KP_Add>", shiftTo Next nonNSP >> moveTo Next nonNSP)       -- Shifts focused window to next workspace
         , ("M-S-<KP_Subtract>", shiftTo Prev nonNSP >> moveTo Prev nonNSP)  -- Shifts focused window to previous workspace
 
-    -- Scratchpads
-        , ("M-C-<Return>", namedScratchpadAction myScratchPads "terminal")
-        , ("M-C-c", namedScratchpadAction myScratchPads "cmus")
-        
-    -- Open My Preferred Terminal. I also run the FISH shell. Setting FISH as my default shell 
-    -- breaks some things so I prefer to just launch "fish" when I open a terminal.
         , ("M-<Return>", spawn (myTerminal ++ " -e zsh"))
+        , ("M-t", spawn "telegram-desktop")
 		
-    --- Dmenu Scripts (Alt+Ctr+Key)
+    --- Dmenu
         , ("M-p", spawn "dmenu_run")
 
 
@@ -257,11 +222,11 @@ myKeys =
         , ("<XF86AudioNext>", spawn "cmus next")
         , ("<XF86MonBrightnessUp>", spawn "bright")
         , ("<XF86MonBrightnessDown>", spawn "bright -d")
-        -- , ("<XF86AudioMute>",   spawn "amixer set Master toggle")  -- Bug prevents it from toggling correctly in 12.04.
+        , ("<XF86AudioMute>",   spawn "amixer set Master toggle")
         , ("<XF86AudioLowerVolume>", spawn "amixer set Master 5%- unmute")
         , ("<XF86AudioRaiseVolume>", spawn "amixer set Master 5%+ unmute")
-        , ("<XF86HomePage>", spawn "firefox")
-        , ("<XF86Search>", safeSpawn "firefox" ["https://www.google.com/"])
+        , ("<XF86HomePage>", spawn "qutebrowser")
+        , ("<XF86Search>", safeSpawn "qutebrowser" ["https://www.duckduckgo.com/"])
         , ("<XF86Mail>", runOrRaise "geary" (resource =? "thunderbird"))
         , ("<XF86Calculator>", runOrRaise "gcalctool" (resource =? "gcalctool"))
         , ("<XF86Eject>", spawn "toggleeject")
@@ -269,10 +234,7 @@ myKeys =
         ] where nonNSP          = WSIs (return (\ws -> W.tag ws /= "nsp"))
                 nonEmptyNonNSP  = WSIs (return (\ws -> isJust (W.stack ws) && W.tag ws /= "nsp"))
                 
-------------------------------------------------------------------------
 ---WORKSPACES
-------------------------------------------------------------------------
-
 xmobarEscape = concatMap doubleLts
   where
         doubleLts '<' = "<<"
@@ -297,12 +259,9 @@ myManageHook = composeAll
       , className =? "Gimp"        --> doFloat
       , className =? "Gimp"        --> doShift "<action=xdotool key super+8>gfx</action>"
       , (className =? "Firefox" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
-     ] <+> namedScratchpadManageHook myScratchPads
+     ]
 
-------------------------------------------------------------------------
 ---LAYOUTS
-------------------------------------------------------------------------
-
 myLayoutHook = avoidStruts $ mouseResize $ windowArrange $ T.toggleLayouts floats $ 
                mkToggle (NBFULL ?? NOBORDERS ?? EOT) $ myDefaultLayout
              where 
@@ -317,29 +276,3 @@ oneBig     = renamed [Replace "oneBig"]   $ limitWindows 6  $ Mirror $ mkToggle 
 monocle    = renamed [Replace "monocle"]  $ limitWindows 20 $ Full
 space      = renamed [Replace "space"]    $ limitWindows 4  $ spacing 12 $ Mirror $ mkToggle (single MIRROR) $ mkToggle (single REFLECTX) $ mkToggle (single REFLECTY) $ OneBig (2/3) (2/3)
 floats     = renamed [Replace "floats"]   $ limitWindows 20 $ simplestFloat
-
-------------------------------------------------------------------------
----SCRATCHPADS
-------------------------------------------------------------------------
-
-myScratchPads = [ NS "terminal" spawnTerm findTerm manageTerm
-                , NS "cmus" spawnCmus findCmus manageCmus  
-                ]
-
-    where
-    spawnTerm  = myTerminal ++  " -n scratchpad"
-    findTerm   = resource =? "scratchpad"
-    manageTerm = customFloating $ W.RationalRect l t w h
-                 where
-                 h = 0.9
-                 w = 0.9
-                 t = 0.95 -h
-                 l = 0.95 -w
-    spawnCmus  = myTerminal ++  " -n cmus 'cmus'"
-    findCmus   = resource =? "cmus"
-    manageCmus = customFloating $ W.RationalRect l t w h
-                 where
-                 h = 0.9
-                 w = 0.9
-                 t = 0.95 -h
-                 l = 0.95 -w
