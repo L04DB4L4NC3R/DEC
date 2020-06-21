@@ -2,18 +2,32 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+
+# For Window Swallowing
+# https://github.com/salman-abedin/devour/ --> sudo pacman -S xdo (is a dependency)
+# git clone https://github.com/salman-abedin/devour.git && cd devour && sudo make install
+alias mpv="devour mpv"
+alias feh="devour feh"
+
+# For multi-core AUR builds
+export MAKEFLAGS="-j$(nproc)"
+
 export ZSH="/home/angad/.oh-my-zsh"
 
 export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:$GOBIN:$HOME/.cargo/bin:$HOME/.local/bin"
+export DENO_INSTALL="/home/angad/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 # to be able to run qutebrowser as root
 # export QTWEBENGINE_DISABLE_SANDBOX=1
 # for newsboat
 export BROWSER=qutebrowser
 alias postwoman="docker run -p 3000:3000 -d --name postwoman liyasthomas/postwoman:latest"
+# alias mpv="setsid -f mpv"
+alias feh="setsid -f feh"
 
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
@@ -127,3 +141,6 @@ neofetch
 #espeak -p 90 "you have spawned a new terminal" &>/dev/null
 alias l="lsd -Al"
 alias ls="lsd"
+
+export JOPLIN_APIKEY=24e619d3f1f9eb515ea0285b4716c7c9913bb03b28dcb07ddcbaf8c4d9ffd764188f4a29412c09c067b9bd356ae81ee3e0c5ed619de5d693095b95b6a146707a
+export JOPLIN_NOTEID=7c7ad2d5b20b4dd7b88712596a030e6d

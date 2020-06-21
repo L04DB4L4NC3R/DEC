@@ -64,7 +64,7 @@ myFont          = "xft:JetBrainsMono Nerd Font:regular:pixelsize=12"
 myModMask       = mod1Mask  -- Sets modkey to super/windows key
 myTerminal      = "alacritty"      -- Sets default terminal
 myTextEditor    = "vim"     -- Sets default text editor
-myBorderWidth   = 4         -- Sets border width for windows
+myBorderWidth   = 1         -- Sets border width for windows
 windowCount     = gets $ Just . show . length . W.integrate' . W.stack . W.workspace . W.current . windowset
 
 main = do
@@ -96,7 +96,7 @@ main = do
 
 ---AUTOSTART
 myStartupHook = do
-          spawnOnce "nitrogen --set-scaled ~/Photos/wallpapers/cyberwolf.png" 
+          spawnOnce "~/.xmonad/nitrogen-wallpaper-switch.sh" 
           spawnOnce "picom &"
           spawnOnce "xset r rate 200 25"
           setWMName "XMonad"
@@ -142,13 +142,12 @@ myKeys =
         , ("M-S-<Delete>", sinkAll)                  -- Push ALL floating windows back to tile.
 
     -- Grid Select
-        , (("M-S-t"), spawnSelected'
-          [ ("Audacity", "audacity")
-          , ("Firefox", "firefox")
-          , ("Gimp", "gimp")
-          , ("Kdenlive", "kdenlive")
+        , (("M-S-o"), spawnSelected'
+          [ ("Steam", "steam")
           , ("OBS", "obs")
-          , ("Steam", "steam")
+          , ("Qutebrowser", "qutebrowser")
+          , ("Kdenlive", "kdenlive")
+		  , ("Audacity", "audacity")
           ])
 
         , ("M-S-g", goToSelected $ mygridConfig myColorizer)
@@ -214,6 +213,7 @@ myKeys =
 		
     --- Dmenu
         , ("M-p", spawn "dmenu_run")
+        , ("M-e", spawn "~/.config/dmenu/dmenu_emoji.sh")
 
 
     -- Multimedia Keys
