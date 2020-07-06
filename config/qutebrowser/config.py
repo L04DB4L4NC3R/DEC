@@ -18,11 +18,11 @@ config.bind("sp", "spawn --userscript qutepocket")
 # Open in mpv
 c.url.searchengines = {"DEFAULT": "https://duckduckgo.com/?q={}", "aw": "https://wiki.archlinux.org/?search={}", "tor": "https://www.thepìratebay.com/proxy/go.php?url=s/?q={}"}
 config.bind("<Ctrl-Shift-m>", "hint links spawn --detach mpv --force-window yes {hint-url}")
-config.bind("<Ctrl-m>", "spawn --detach mpv --force-window yes {url}")
+config.bind("<Ctrl-m>", "spawn --detach mpv --force-window {url}")
 
 # Download Youtube Videos
-config.bind("<Ctrl-d>", "spawn --detach youtube-dl {url}")
-config.bind("<Ctrl-Shift-d>", "hint links spawn --detach youtube-dl {hint-url}")
+config.bind("<Ctrl-d>", "spawn --detach youtube-dl {url} && notify-send Youtube Video Download")
+config.bind("<Ctrl-Shift-d>", "hint links spawn --detach youtube-dl {hint-url} && notify-send Youtube Video Downloaded")
 
 c.auto_save.session = True
 
