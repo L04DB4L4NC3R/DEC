@@ -1,0 +1,111 @@
+artwork.filemask *cover*.jpg;*front*.jpg;*folder*.jpg;*cover*.png;*front*.png;*folder*.png
+cli_add_playlist_name Default
+deadbeef_version 1.8.4
+filechooser.lastdir file:///home/angad/Music
+flac.ignore_bad_header_errors 1
+flac.ignore_unparsable_stream_errors 1
+gtkui.color.bar_background 0 0 0
+gtkui.color.bar_foreground 44736 2035 41142
+gtkui.color.listview_column_text 65535 65535 65535
+gtkui.color.listview_group_text 65535 65535 65535
+gtkui.color.listview_playing_text 44923 19976 45355
+gtkui.color.listview_selected_text 52942 23644 0
+gtkui.color.listview_text 35466 58082 13364
+gtkui.color.tabstrip_base 20046 39578 1542
+gtkui.color.tabstrip_dark 29555 53970 5654
+gtkui.color.tabstrip_light 0 0 0
+gtkui.color.tabstrip_mid 11822 13364 13878
+gtkui.color.tabstrip_playing_text 65535 65535 65535
+gtkui.color.tabstrip_selected_text 65535 65535 65535
+gtkui.color.tabstrip_text 65535 65535 65535
+gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"445","align":"0","color_override":"0","color":"#ff000000"},{"title":"Artist / Album","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"662","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"519","align":"0","color_override":"0","color":"#ff000000"},{"title":"Track No","id":"-1","format":"%tracknumber%","sort_format":"","size":"86","align":"1","color_override":"0","color":"#ff000000"}]
+gtkui.embolden_current_track 1
+gtkui.eq.visible 0
+gtkui.font.listview_column_text JetBrainsMono Nerd Font Bold 12
+gtkui.font.listview_text JetBrainsMono Nerd Font Bold 14
+gtkui.font.tabstrip_text JetBrainsMono Nerd Font 12
+gtkui.hide_tray_icon 0
+gtkui.italic_current_track 0
+gtkui.italic_selected_tracks 1
+gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } tabbed_playlist hideheaders=0 width=1906 {} } 
+gtkui.override_bar_colors 1
+gtkui.override_listview_colors 1
+gtkui.override_tabstrip_colors 1
+gtkui.start_hidden 0
+gtkui.statusbar.visible 1
+gtkui.statusbar_seltime 0
+gtkui.tabscroll 0
+gtkui.tabstrip_embolden_playing 1
+gtkui.tabstrip_embolden_selected 1
+gtkui.titlebar_playing_tf %title% - %artist%
+gtkui.titlebar_stopped_tf [PAUSED] %title% - %artist%
+gui_plugin GTK3
+hotkey.key01 "Ctrl k" 0 0 find
+hotkey.key02 "Ctrl o" 0 0 open_files
+hotkey.key03 "Ctrl q" 0 0 quit
+hotkey.key04 "Ctrl n" 0 0 new_playlist
+hotkey.key05 "Ctrl a" 0 0 select_all
+hotkey.key06 "Escape" 0 0 deselect_all
+hotkey.key07 "Ctrl m" 0 0 toggle_stop_after_current
+hotkey.key08 "Ctrl j" 0 0 jump_to_current_track
+hotkey.key09 "F1" 0 0 help
+hotkey.key10 "Delete" 1 0 remove_from_playlist
+hotkey.key11 "Ctrl w" 0 0 remove_current_playlist
+hotkey.key12 "Alt Return" 1 0 track_properties
+hotkey.key13 "Return" 0 0 play
+hotkey.key14 "p" 0 0 toggle_pause
+hotkey.key15 "Alt 1" 0 0 playlist1
+hotkey.key16 "Alt 2" 0 0 playlist2
+hotkey.key17 "Alt 3" 0 0 playlist3
+hotkey.key18 "Alt 4" 0 0 playlist4
+hotkey.key19 "Alt 5" 0 0 playlist5
+hotkey.key20 "Alt 6" 0 0 playlist6
+hotkey.key21 "Alt 7" 0 0 playlist7
+hotkey.key22 "Alt 8" 0 0 playlist8
+hotkey.key23 "Alt 9" 0 0 playlist9
+hotkey.key24 "Alt 0" 0 0 playlist10
+hotkey.key25 "z" 0 0 prev
+hotkey.key26 "x" 0 0 play
+hotkey.key27 "space" 0 0 toggle_pause
+hotkey.key28 "v" 0 0 stop
+hotkey.key29 "n" 0 0 next
+hotkey.key30 "r" 0 0 playback_random
+hotkey.key31 "k" 1 0 move_tracks_up
+hotkey.key32 "j" 1 0 move_tracks_down
+hotkeys_created 1
+logwindow.geometry.h 198
+logwindow.geometry.w 398
+logwindow.geometry.x 130
+logwindow.geometry.y 208
+mainwin.geometry.h 1044
+mainwin.geometry.w 946
+mainwin.geometry.x 966
+mainwin.geometry.y 28
+network.proxy.port 8080
+output_plugin alsa
+playback.loop 1
+playback.order 1
+playback.volume 0.0000000
+playlist.current 0
+playlist.cursor.0 42
+playlist.cursor.1 0
+playlist.scroll.0 808
+playlist.scroll.1 0
+playlist.scroll.cursorfollowplayback 1
+playlist.tab.00000 Default
+playlist.tab.00001 Favourites
+prefwin.geometry.h 570
+prefwin.geometry.w 940
+prefwin.geometry.x 492
+prefwin.geometry.y 251
+resume.paused 1
+resume.playlist 0
+resume.position 107.51499
+resume.track 0
+searchwin.geometry.h 148
+searchwin.geometry.w 448
+searchwin.geometry.x 0
+searchwin.geometry.y 0
+streamer.samplerate 44100
+streamer.samplerate_mult_44 44100
+streamer.samplerate_mult_48 48000
