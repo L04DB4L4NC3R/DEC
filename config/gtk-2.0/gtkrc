@@ -1,0 +1,4 @@
+gtk-icon-theme-name = "Breeze"
+gtk-theme-name = "Adwaita"
+gtk-font-name = "JetBrainsMono Nerd Font 12"
+gtk-application-prefer-dark-theme = true
