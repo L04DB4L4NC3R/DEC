@@ -8,6 +8,7 @@
 # git clone https://github.com/salman-abedin/devour.git && cd devour && sudo make install
 alias mpv="devour mpv"
 alias feh="devour feh"
+alias zathura="devour zathura"
 
 # For multi-core AUR builds
 export MAKEFLAGS="-j$(nproc)"
@@ -105,7 +106,7 @@ ZSH_THEME="zhann"
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(git
-				zsh-autosuggestions)
+			zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-autosuggestions
