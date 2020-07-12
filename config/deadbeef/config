@@ -2,10 +2,12 @@ artwork.filemask *cover*.jpg;*front*.jpg;*folder*.jpg;*cover*.png;*front*.png;*f
 cli_add_playlist_name Default
 deadbeef_version 1.8.4
 filechooser.lastdir file:///home/angad/Music
+filechooser.playlist.lastdir file:///home/angad
 flac.ignore_bad_header_errors 1
 flac.ignore_unparsable_stream_errors 1
+gtkui.autoresize_columns 0
 gtkui.color.bar_background 0 0 0
-gtkui.color.bar_foreground 44736 2035 41142
+gtkui.color.bar_foreground 29555 53970 5654
 gtkui.color.listview_column_text 65535 65535 65535
 gtkui.color.listview_group_text 65535 65535 65535
 gtkui.color.listview_playing_text 44923 19976 45355
@@ -27,13 +29,14 @@ gtkui.font.tabstrip_text JetBrainsMono Nerd Font 12
 gtkui.hide_tray_icon 0
 gtkui.italic_current_track 0
 gtkui.italic_selected_tracks 1
-gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } tabbed_playlist hideheaders=0 width=1906 {} } 
+gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } hsplitter locked=0 ratio=0.408333 pos=0 size2=0 {vsplitter locked=0 ratio=0.500000 pos=0 size2=0 {hsplitter locked=0 ratio=0.191327 pos=0 size2=0 {pltbrowser {} coverart {} } spectrum {} } playlist hideheaders=0 width=1130 {} } } 
 gtkui.override_bar_colors 1
 gtkui.override_listview_colors 1
 gtkui.override_tabstrip_colors 1
+gtkui.skip_deleted_songs 1
 gtkui.start_hidden 0
-gtkui.statusbar.visible 1
-gtkui.statusbar_seltime 0
+gtkui.statusbar.visible 0
+gtkui.statusbar_seltime 1
 gtkui.tabscroll 0
 gtkui.tabstrip_embolden_playing 1
 gtkui.tabstrip_embolden_selected 1
@@ -78,32 +81,41 @@ logwindow.geometry.w 398
 logwindow.geometry.x 130
 logwindow.geometry.y 208
 mainwin.geometry.h 1044
-mainwin.geometry.w 946
-mainwin.geometry.x 966
+mainwin.geometry.w 1906
+mainwin.geometry.x 6
 mainwin.geometry.y 28
 network.proxy.port 8080
+notify.albumart 1
+notify.albumart_size 64
+notify.enable 1
+notify.format_content_tf %artist% - %album%
+notify.format_title_tf %title%
 output_plugin alsa
 playback.loop 1
 playback.order 1
 playback.volume 0.0000000
 playlist.current 0
-playlist.cursor.0 42
-playlist.cursor.1 0
-playlist.scroll.0 808
+playlist.cursor.0 166
+playlist.cursor.1 -1
+playlist.cursor.2 0
+playlist.groups.spacing 0
+playlist.scroll.0 4326
 playlist.scroll.1 0
+playlist.scroll.2 0
 playlist.scroll.cursorfollowplayback 1
-playlist.tab.00000 Default
+playlist.tab.00000 liked
 playlist.tab.00001 Favourites
+playlist.tab.00002 Default
 prefwin.geometry.h 570
 prefwin.geometry.w 940
 prefwin.geometry.x 492
 prefwin.geometry.y 251
-resume.paused 1
+resume.paused 0
 resume.playlist 0
-resume.position 107.51499
-resume.track 0
-searchwin.geometry.h 148
-searchwin.geometry.w 448
+resume.position 85.844497
+resume.track 150
+searchwin.geometry.h 146
+searchwin.geometry.w 446
 searchwin.geometry.x 0
 searchwin.geometry.y 0
 streamer.samplerate 44100

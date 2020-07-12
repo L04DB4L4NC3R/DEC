@@ -217,9 +217,10 @@ myKeys =
 
 
     -- Multimedia Keys
-        , ("<XF86AudioPlay>", spawn "cmus toggle")
-        , ("<XF86AudioPrev>", spawn "cmus prev")
-        , ("<XF86AudioNext>", spawn "cmus next")
+        , ("<XF86AudioPlay>", spawn "deadbeef --play-pause")
+        , ("<XF86AudioStop>", spawn "deadbeef --stop")
+        , ("<XF86AudioPrev>", spawn "deadbeef --prev")
+        , ("<XF86AudioNext>", spawn "deadbeef --next")
         , ("<XF86MonBrightnessUp>", spawn "bright")
         , ("<XF86MonBrightnessDown>", spawn "bright -d")
         , ("<XF86AudioMute>",   spawn "amixer set Master toggle")
