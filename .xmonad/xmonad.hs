@@ -97,7 +97,6 @@ main = do
 
 ---AUTOSTART
 myStartupHook = do
-          spawnOnce "~/.xmonad/nitrogen-wallpaper-switch.sh" 
           spawnOnce "picom &"
           spawnOnce "xset r rate 200 25"
           setWMName "XMonad"
