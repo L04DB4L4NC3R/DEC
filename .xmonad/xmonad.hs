@@ -29,7 +29,7 @@ import XMonad.Actions.RotSlaves (rotSlavesDown, rotAllDown)
 import XMonad.Actions.CopyWindow (kill1, copyToAll, killAllOtherCopies, runOrCopy)
 import XMonad.Actions.WindowGo (runOrRaise, raiseMaybe)
 import XMonad.Actions.WithAll (sinkAll, killAll)
-import XMonad.Actions.CycleWS (moveTo, shiftTo, WSType(..), nextScreen, prevScreen, shiftNextScreen, shiftPrevScreen)
+import XMonad.Actions.CycleWS (moveTo, shiftTo, WSType(..), nextScreen, prevScreen, shiftNextScreen, shiftPrevScreen, swapNextScreen)
 import XMonad.Actions.GridSelect
 import XMonad.Actions.DynamicWorkspaces (addWorkspacePrompt, removeEmptyWorkspace)
 import XMonad.Actions.MouseResize
@@ -69,10 +69,11 @@ windowCount     = gets $ Just . show . length . W.integrate' . W.stack . W.works
 
 main = do
     xmproc0 <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc0"
+    xmproc1 <- spawnPipe "xmobar -x 1 ~/.config/xmobar/xmobarrc0"
     xmonad $ ewmh desktopConfig
         { manageHook = ( isFullscreen --> doFullFloat ) <+> myManageHook <+> manageHook desktopConfig <+> manageDocks
         , logHook = dynamicLogWithPP xmobarPP
-                        { ppOutput = \x -> hPutStrLn xmproc0 x
+                        { ppOutput = \x -> hPutStrLn xmproc0 x >> hPutStrLn xmproc1 x
                         , ppCurrent = xmobarColor "#c3e88d" "" . wrap "[" "]" -- Current workspace in xmobar
                         , ppVisible = xmobarColor "#c3e88d" ""                -- Visible but not current workspace
                         , ppHidden = xmobarColor "#82AAFF" "" . wrap "*" ""   -- Hidden workspaces in xmobar
