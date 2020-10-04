@@ -64,7 +64,7 @@ myFont          = "xft:JetBrainsMono Nerd Font:regular:pixelsize=12"
 myModMask       = mod1Mask  -- Sets modkey to super/windows key
 myTerminal      = "alacritty"      -- Sets default terminal
 myTextEditor    = "vim"     -- Sets default text editor
-myBorderWidth   = 1         -- Sets border width for windows
+myBorderWidth   = 3         -- Sets border width for windows
 windowCount     = gets $ Just . show . length . W.integrate' . W.stack . W.workspace . W.current . windowset
 
 main = do
@@ -136,6 +136,7 @@ myKeys =
     -- Windows
         , ("M-S-c", kill1)                           -- Kill the currently focused client
         , ("M-S-a", killAll)                         -- Kill all the windows on current workspace
+        , ("M4-l", spawn "slock")                         -- Kill all the windows on current workspace
 
     -- Floating windows
         , ("M-<Delete>", withFocused $ windows . W.sink)  -- Push floating window back to tile.
