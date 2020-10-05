@@ -149,6 +149,10 @@ myKeys =
           , ("Qutebrowser", "qutebrowser")
           , ("Kdenlive", "kdenlive")
 		  , ("Audacity", "audacity")
+		  , ("Joplin", "joplin-desktop")
+		  , ("Deadbeef", "deadbeef")
+		  , ("Pavucontrol", "pavucontrol")
+		  , ("ARandR", "arandr")
           ])
 
         , ("M-S-g", goToSelected $ mygridConfig myColorizer)
