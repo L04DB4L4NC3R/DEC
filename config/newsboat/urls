@@ -42,13 +42,13 @@ https://github.com/L04DB4L4NC3R.private.atom?token=AHI5QJCKMRE6KEWOFAWFAN544362O
 https://news.ycombinator.com/rss "~Ycombinator Hackernews " News
 
 # Hacker news
-https://hnrss.org/newest "~HackerNews " News
+# https://hnrss.org/newest "~HackerNews " News
 
 # Its FOSS
 https://itsfoss.com/feed/ "~Its FOSS " News
 
 # Dzone database feed
-http://feeds.dzone.com/database "~Dzone DBMS " News
+# http://feeds.dzone.com/database "~Dzone DBMS " News
 
 # Dzone opensource feed
 # http://feeds.dzone.com/open-source "~Dzone OSS "
@@ -66,79 +66,83 @@ https://feeds.cfpland.com/v2/rss/cfps "~Upcoming CFPs " News
 
 
 
----->[PERSONAL--BLOGS]---->||||||||
+ ---->[PERSONAL--BLOGS]---->||||||||
+# Luke Smith
+https://lukesmith.xyz/rss.xml "~Luke Smith Blog"
 # Uncle Bob (the clean coder)
-https://blog.cleancoder.com/atom.xml "~Uncle Bob " People
+# https://blog.cleancoder.com/atom.xml "~Uncle Bob " People
 
 # Joe Rogan Podcasts
 # http://podcasts.joerogan.net/feed/rss
 
 # SVN blogs and ideas
-https://m.signalvnoise.com/feed/ "~Signal v/s Noise ﲁ" People
+# https://m.signalvnoise.com/feed/ "~Signal v/s Noise ﲁ" People
 
 # Martin Fowler bliki atom feed
-https://martinfowler.com/feed.atom "~Martin Fowler " People
+# https://martinfowler.com/feed.atom "~Martin Fowler " People
 
 # Linux on DEV
-https://dev.to/feed/tag/icymi "~DEV.to Digest " People
+# https://dev.to/feed/tag/icymi "~DEV.to Digest " People
 
 # Linux on DEV
-https://dev.to/feed/tag/linux "~Linux on DEV.to " People
+# https://dev.to/feed/tag/linux "~Linux on DEV.to " People
 
 # Grafana blog
 # https://grafana.com/blog/index.xml "~Grafana "
 
 # Jeff Atwood's codinghorror
-http://feeds.feedburner.com/codinghorror?format=usm "~Jeff Atwood Coding Horror " People
+# http://feeds.feedburner.com/codinghorror?format=usm "~Jeff Atwood Coding Horror " People
 
 # Hackernoon
-https://medium.com/feed/hackernoon "~Hackernoon " People
+# https://medium.com/feed/hackernoon "~Hackernoon " People
 
 # Ivan blog
-https://iximiuz.com/feed.atom "~Ivan on linux " People
+# https://iximiuz.com/feed.atom "~Ivan on linux " People
 
 
 
 
 
----->[Dev--Podcasts]------>||||||||
+# ---->[Dev--Podcasts]------>||||||||
 # Darknet diaries
-https://feeds.megaphone.fm/darknetdiaries "~Darknet Dairies Podcast " Dev-Podcasts
+# https://feeds.megaphone.fm/darknetdiaries "~Darknet Dairies Podcast " Dev-Podcasts
 
 # The changelog
-https://changelog.com/podcast/feed "~ChangeLog Podcast " Dev-Podcasts
+# https://changelog.com/podcast/feed "~ChangeLog Podcast " Dev-Podcasts
 
 # The stackoverflow podcast
-https://stackoverflow.blog/feed/ "~StackOverflow Blog " Dev-Podcasts
+# https://stackoverflow.blog/feed/ "~StackOverflow Blog " Dev-Podcasts
 
 # DevDiscuss, the dev podcast
-https://feeds.devpods.dev/devdiscuss_podcast.xml "~DEV Podcast " Dev-Podcasts
+# https://feeds.devpods.dev/devdiscuss_podcast.xml "~DEV Podcast " Dev-Podcasts
 
 # Techlytical by Ayush Samarth Dhiraj and Yaswant
-https://anchor.fm/s/2d71f174/podcast/rss
+# https://anchor.fm/s/2d71f174/podcast/rss
+
+# Distrotube
+# https://feeds.buzzsprout.com/1263722.rss
 
 
 
-
----->[Reddit--]----------->||||||||
+# ---->[Reddit--]----------->||||||||
 # Linux
-https://www.reddit.com/r/linux/.rss "~r/linux " Reddit
+# https://www.reddit.com/r/linux/.rss "~r/linux " Reddit
 
 # Programming
-https://www.reddit.com/r/programming/.rss "~r/programming " Reddit
+# https://www.reddit.com/r/programming/.rss "~r/programming " Reddit
 
 
 
 
----->[Comedy---Feed]------>||||||||
+# ---->[Comedy---Feed]------>||||||||
 # Explosm (Cyanide and happiness)
-http://feeds.feedburner.com/explosm?format=usm "~Cyanide and Happiness " Comedy
+# http://feeds.feedburner.com/explosm?format=usm "~Cyanide and Happiness " Comedy
 
 # XKCD comics
-https://xkcd.com/rss.xml "~XKCD Comics " Comedy
+# https://xkcd.com/rss.xml "~XKCD Comics " Comedy
 
 # Jokes RSS feed
-https://www.reddit.com/r/Jokes/.rss "~r/Jokes " Comedy
+# https://www.reddit.com/r/Jokes/.rss "~r/Jokes " Comedy
 
 # Funny RSS feed
 # https://www.reddit.com/r/funny/.rss "~r/funny "
