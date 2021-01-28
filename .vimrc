@@ -33,11 +33,10 @@ set noswapfile
 
 
 " colorscheme codedark
+colorscheme dracula
 
 " colorscheme dracula
 " https://draculatheme.com/vim
-packadd! dracula
-colorscheme dracula
 
 " Open GoDef in different pane
 cnoreabbrev gd GoDef
@@ -47,8 +46,7 @@ function SplitAndDef()
 				return 0
 endfunction 
 
-noremap <NUL> :call SplitAndDef()
-
+noremap <NUL> :call SplitAndDef()<CR>
 " For cplouring the terminal
 " This enables vim airline
 set laststatus=2
@@ -70,11 +68,18 @@ nmap <C-j> <c-w>j<c-w>
 nmap <C-k> <c-w>k<c-w>
 "esc Aernative
 imap ;; <Esc>
+map '' <Esc>:wq<CR>
+imap '' <Esc>:wq<CR>
+inoremap <c-k> <Esc>:w<CR>
+noremap <c-k> :w<CR>
+
 "window size
 map <s-j> <c-w>+
 map <s-k> <c-w>-
 map <s-h> <c-w><
 map <s-l> <c-w>>
+" save
+inoremap <c-j> <CR>
 
 noremap <c-o> :split<CR>
 noremap <c-e> :vsplit<CR>
@@ -101,3 +106,8 @@ set shiftwidth=4
 inoremap {<CR> {<CR>}<Esc>ko
 inoremap [<CR> [<CR>]<Esc>ko
 inoremap (<CR> (<CR>)<Esc>ko
+
+map ; <Right>
+map j <Left>
+map k <Down>
+map l <Up>
