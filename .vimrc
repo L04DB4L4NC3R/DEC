@@ -20,6 +20,7 @@ set mouse=a
 
 " Mapping for fast quit without save
 noremap <Backspace> :q<cr>
+noremap <c-h> :q<cr>
 set backspace=indent,eol,start
 
 " Display line numbers
@@ -32,6 +33,7 @@ set noswapfile
 " Display colour
 " colorscheme codedark
 colorscheme dracula
+" set bg=dark
 
 " colorscheme dracula
 " https://draculatheme.com/vim
@@ -60,10 +62,23 @@ map <C-n> :NERDTreeToggle<CR>
 let g:go_fmt_command = "goimports"
 
 "remap to move between splits
-nmap <C-h> <c-w>h<c-w>
-nmap <C-l> <c-w>l<c-w>
-nmap <C-j> <c-w>j<c-w>
-nmap <C-k> <c-w>k<c-w>
+nnoremap <c-w>k <c-w><c-j>
+nnoremap <c-w>l <c-w><c-k>
+nnoremap <c-w>; <c-w><c-l>
+nnoremap <c-w>j <c-w><c-h>
+
+" swap top/bottom or left/right split
+" <c-w>r
+"
+" Break out current window into a new tabview
+" <c-w>t
+"
+" Close every window in current tabview but the current one
+" <c-w>o
+"
+" Equalize splits
+" <c-w>=
+
 "esc Aernative
 imap ;; <Esc>
 map '' <Esc>:wq<CR>
@@ -72,12 +87,10 @@ inoremap <c-k> <Esc>:w<CR>
 noremap <c-k> :w<CR>
 
 "window size
-map <s-j> <c-w>+
-map <s-k> <c-w>-
-map <s-h> <c-w><
-map <s-l> <c-w>>
-" save
-inoremap <c-j> <CR>
+map <s-k> <c-w>+
+map <s-l> <c-w>-
+map <s-j> <c-w><
+map <s-;> <c-w>>
 
 noremap <c-o> :split<CR>
 noremap <c-e> :vsplit<CR>
@@ -99,6 +112,8 @@ set tabstop=4
 set softtabstop=0 noexpandtab
 " Indent a single tab
 set shiftwidth=4
+
+" set guifont=Menlo\ Regular:h20
 
 " Automatically closing braces
 inoremap {<CR> {<CR>}<Esc>ko
@@ -170,3 +185,7 @@ function! GitStatus()
   return printf('+%d/~%d/-%d', a, m, r)
 endfunction
 set statusline+=%{GitStatus()}
+
+let g:ctrlp_extensions = ['buffertag']
+let g:ctrlp_types = ['mru', 'fil', 'buf', 'bft']
+let g:ctrlp_mruf_max = 100
