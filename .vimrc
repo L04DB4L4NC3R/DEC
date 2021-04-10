@@ -173,6 +173,7 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 " <enter> to get into a file and stage specific diff chunks
 " up/down arrow keys to move between files
 noremap <leader>l :tab term lazygit<CR>
+noremap <leader>t :tab term<CR>
 
 " how often to write swap to disk (ms)
 " for vim gitgutter
