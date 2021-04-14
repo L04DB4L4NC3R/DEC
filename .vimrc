@@ -87,10 +87,10 @@ inoremap <c-k> <Esc>:w<CR>
 noremap <c-k> :w<CR>
 
 "window size
-map <s-k> <c-w>+
-map <s-l> <c-w>-
-map <s-j> <c-w><
-map <s-;> <c-w>>
+nnoremap = :10winc><CR>
+nnoremap - :10winc<<CR>
+nnoremap + :10winc+<CR>
+nnoremap _ :10winc-<CR>
 
 noremap <c-o> :split<CR>
 noremap <c-e> :vsplit<CR>
