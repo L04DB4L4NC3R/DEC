@@ -24,7 +24,7 @@ font pango:monospace 8
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- exec ~/.config/i3/i3lock.sh
+exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/i3lock.sh
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -153,27 +153,27 @@ bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+		# These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+		# Pressing left will shrink the window’s width.
+		# Pressing right will grow the window’s width.
+		# Pressing up will shrink the window’s height.
+		# Pressing down will grow the window’s height.
+		bindsym j resize shrink width 10 px or 10 ppt
+		bindsym k resize grow height 10 px or 10 ppt
+		bindsym l resize shrink height 10 px or 10 ppt
+		bindsym semicolon resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+		# same bindings, but for the arrow keys
+		bindsym Left resize shrink width 10 px or 10 ppt
+		bindsym Down resize grow height 10 px or 10 ppt
+		bindsym Up resize shrink height 10 px or 10 ppt
+		bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+		# back to normal: Enter or Escape or $mod+r
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
+		bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -189,28 +189,28 @@ gaps outer 5
 # smart_gaps on
 # # smart_borders on
 bar {
-        status_command i3status
+		status_command i3status
 		position top
-    	workspace_buttons yes
-    	tray_padding 0
-    	separator_symbol "|"
+		workspace_buttons yes
+		tray_padding 0
+		separator_symbol "|"
 		# status_command i3status -c ~/.config/i3/i3status.conf
 		status_command i3blocks -c ~/.config/i3/i3blocks.conf
-        # status_command exec /root/Desktop/stuff/hopping/wm/i3/my_status_script.sh
-        font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-        font pango:JetBrains Mono Nerd Font 14
-        # i3bar_command i3bar --transparency
-        colors {
+		# status_command exec /root/Desktop/stuff/hopping/wm/i3/my_status_script.sh
+		font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+		font pango:JetBrains Mono Nerd Font 14
+		# i3bar_command i3bar --transparency
+		colors {
 			background #282A36
-        	statusline #F8F8F2
-        	separator  #44475A
+			statusline #F8F8F2
+			separator  #44475A
 
-        	focused_workspace  #44475A #44475A #F8F8F2
-        	active_workspace   #282A36 #44475A #F8F8F2
-        	inactive_workspace #282A36 #282A36 #BFBFBF
-        	urgent_workspace   #FF5555 #FF5555 #F8F8F2
-        	binding_mode       #FF5555 #FF5555 #F8F8F2
-        }
+			focused_workspace  #44475A #44475A #F8F8F2
+			active_workspace   #282A36 #44475A #F8F8F2
+			inactive_workspace #282A36 #282A36 #BFBFBF
+			urgent_workspace   #FF5555 #FF5555 #F8F8F2
+			binding_mode	   #FF5555 #FF5555 #F8F8F2
+		}
 }
 
 
