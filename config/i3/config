@@ -41,7 +41,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+c kill
@@ -54,10 +54,10 @@ bindsym $mod+p exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
 
 bindsym $mod+o split h
 
@@ -180,26 +180,38 @@ bindsym $mod+r mode "resize"
 
 # custom configuration
 # only works if i3-gaps is installed
-for_window [class="^.*"] border pixel 2
-gaps inner 10
-gaps outer 10
+for_window [class="^.*"] border pixel 3
+gaps inner 5
+gaps outer 5
 # smart_gaps on
 # # smart_borders on
 bar {
         status_command i3status
+		position top
+    	workspace_buttons yes
+    	tray_padding 0
+    	separator_symbol "|"
+		# status_command i3status -c ~/.config/i3/i3status.conf
+		status_command i3blocks -c ~/.config/i3/i3blocks.conf
         # status_command exec /root/Desktop/stuff/hopping/wm/i3/my_status_script.sh
         font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-        font pango:DejaVu Sans Mono 14
-        position top
-        i3bar_command i3bar --transparency
+        font pango:JetBrains Mono Nerd Font 14
+        # i3bar_command i3bar --transparency
         colors {
-            # RGBA format
-            # The fourth option accounts for the opacity 
-            background #844685aa
-            statusline #ffffffdd
-            separator #ffffffdd
+			background #282A36
+        	statusline #F8F8F2
+        	separator  #44475A
+
+        	focused_workspace  #44475A #44475A #F8F8F2
+        	active_workspace   #282A36 #44475A #F8F8F2
+        	inactive_workspace #282A36 #282A36 #BFBFBF
+        	urgent_workspace   #FF5555 #FF5555 #F8F8F2
+        	binding_mode       #FF5555 #FF5555 #F8F8F2
         }
 }
 
 
 bindsym $mod+b exec "firefox"
+exec_always nitrogen --set-zoom-fill --random ~/Pictures/wallpapers/
+exec_always xset r rate 300 25
+exec_always --no-startup-id picom &
