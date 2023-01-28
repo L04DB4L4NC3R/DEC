@@ -158,7 +158,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 14.0
+  size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -575,7 +575,7 @@ key_bindings:
   #- { key: L,         mods: Control, action: ClearLogNotice                   }
   #- { key: L,         mods: Control, chars: "\x0c"                            }
   - { key: Comma,    mods: Control,   action: ScrollPageUp,   mode: ~Alt       }
-  - { key: Period,  mods: Control,   action: ScrollPageDown, mode: ~Alt       }
+  - { key: Period,   mods: Control,   action: ScrollPageDown, mode: ~Alt       }
   #- { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
   #- { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
   #
@@ -605,7 +605,7 @@ key_bindings:
   - { key: L,                           mode: Vi, action: Up                      }
   - { key: K,                           mode: Vi, action: Down                    }
   - { key: J,                           mode: Vi, action: Left                    }
-  - { key: Semicolon,                           mode: Vi, action: Right                   }
+  - { key: Semicolon,                   mode: Vi, action: Right                   }
   #- { key: Up,                          mode: Vi, action: Up                      }
   #- { key: Down,                        mode: Vi, action: Down                    }
   #- { key: Left,                        mode: Vi, action: Left                    }
@@ -627,3 +627,16 @@ key_bindings:
   #- { key: Slash,  mods: Shift,         mode: Vi, action: SearchReverse           }
   #- { key: N,                           mode: Vi, action: SearchNext              }
   #- { key: N,      mods: Shift,         mode: Vi, action: SearchPrevious          }
+
+
+  # these characters are extracted using `xxd -psd` command
+  # here the first one refers to <M-b>j. In linux it is alt, in mac it is option
+  # this is done because in mac, option key is not meta key
+  # navigation in tmux
+  - { key: J,                            mods: Alt,     chars: "\x02\x6a"         }
+  - { key: K,                            mods: Alt,     chars: "\x02\x6b"         }
+  - { key: L,                            mods: Alt,     chars: "\x02\x6c"         }
+  - { key: Semicolon,                    mods: Alt,     chars: "\x02\x3b"         }
+  # splits in tmux
+  - { key: E,                            mods: Alt,     chars: "\x02\x25"         }
+  - { key: O,                            mods: Alt,     chars: "\x02\x22"         }
